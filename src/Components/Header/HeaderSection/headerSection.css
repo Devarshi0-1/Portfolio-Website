@@ -1,0 +1,127 @@
+.headerSection {
+    padding-top: 100px;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--bg-clr-primary);
+}
+
+.headerSection  h1 {
+    margin: auto 0;
+    font-size: 70px;
+    opacity: 0.7;
+    color: var(--clr-sec-text);
+}
+
+.headerSection  h2 {
+    margin: auto 0;
+    font-size: 40px;
+    opacity: 0.5;
+    color: var(--clr-sec-text);
+}
+
+.headerSection  p {
+    margin: auto 0;
+    font-size: 20px;
+    opacity: 0.6;
+    color: var(--clr-sec-text);
+}
+
+.headerSection button {
+    height: 60px;
+    width: 200px;
+    margin: auto 0;
+    border-radius: 10px;
+    border-width: 0;
+    font-size: 20px;
+    background-color: rgb(110, 94, 217);
+    color: white;
+    /* color: var(--clr-text); */
+    cursor: pointer;
+    transition: transform ease-in 200ms;
+}
+
+.headerSection button:hover{
+    transform: translateY(10px);
+}
+
+.contactIco {
+    width: 20px;
+    margin-left: 5px;
+    fill: white;
+    /* fill: var(--clr-text); */
+}
+
+.headerGridContainer {
+    height: 450px;
+    width: 70%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 50%);
+}
+
+.blob {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    margin: auto auto;
+    background-color: var(--clr-accent-light);
+    border-radius: 401px 573px 466px 717px;
+    height: 360px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.profileImg {
+    width: 450px;
+}
+
+.verticalSocials{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50px;
+    height: 200px;
+    left: 0;
+}
+
+.verticalSocials *{
+    width: 25px;
+    fill: var(--clr-accent);
+}
+
+.scrollDown{
+    position: absolute;
+    bottom: 30px;
+    left: 225px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform ease-in 200ms;
+}
+
+.scrollDown:hover{
+    transform: translateY(10px);
+}
+
+.scrollDown p{
+    font-size: 20px;
+    color: var(--clr-sec-text);
+}
+
+.scrollIcons{
+    margin: auto 10px;
+    height: 30px;
+    fill: var(--clr-accent);
+}
+
+.downIcon{
+    height: 20px;
+}

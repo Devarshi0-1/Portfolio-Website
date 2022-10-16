@@ -1,0 +1,156 @@
+.projectsContainer {
+    margin-top: 50px;
+    height: 70%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-clr-primary);
+}
+
+.cardsOuterCont {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardsInnerCont {
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0 30px;
+}
+
+.cardsInnerCont::-webkit-scrollbar {
+    height: 10px;
+}
+
+.cardsInnerCont::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.cardsInnerCont::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.509);
+    border-radius: 10px;
+}
+
+.cardsInnerCont::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(128, 128, 128, 0.309);
+}
+
+.slide {
+    flex-shrink: 0;
+    height: 459px;
+    height: 90%;
+    width: 1126px;
+    background-color: var(--bg-clr-primary);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 3fr 1.5fr;
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(81, 81, 81, 0.289);
+    transition: box-shadow 500ms;
+}
+
+.slide:hover {
+    box-shadow: 0 0 0 2px plum,
+        0 0 20px 0 rgba(81, 81, 81, 0.289);
+}
+
+.slide> :nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.slideImgCont {
+    display: grid;
+    place-items: center;
+}
+
+.slideImgs {
+    width: 681px;
+    border-radius: 10px;
+}
+
+.slideTechStackUsed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.slideTechStackUsed h3 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: var(--clr-sec-text);
+}
+
+.stackLogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.withReact {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.stackLogos>* {
+    width: 50px;
+    margin: 0 10px;
+}
+
+
+.stackLogos> :nth-child(2) {
+    width: 35px;
+}
+
+.stackLogos> :nth-child(3) {
+    width: 50px;
+}
+
+.slideSummary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.slideSummary h3 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: var(--clr-sec-text);
+}
+
+.slideSummary p {
+    text-align: center;
+    color: var(--clr-sec-text);
+}
+
+.slideCTA {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slideCTA>a {
+    padding: 5px 20px;
+    border-radius: 5px;
+    border-width: 0;
+    font-size: 25px;
+    background-color: var(--clr-accent);
+    color: white;
+    cursor: pointer;
+    transition: transform ease-in 200ms;
+    text-decoration: none;
+}
+
+.slideCTA> :nth-child(2) {
+    background-color: transparent;
+    color: var(--clr-sec-text);
+    border: 1px solid var(--clr-accent);
+}

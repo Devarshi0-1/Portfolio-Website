@@ -1,0 +1,98 @@
+#about {
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: var(--bg-clr-primary);
+}
+
+#about h1 {
+    font-size: 65px;
+    opacity: 0.8;
+    color: var(--clr-sec-text);
+}
+
+#about h2 {
+    font-size: 20px;
+    opacity: 0.5;
+    color: var(--clr-sec-text);
+}
+
+.aboutGridContainer {
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    grid-template-columns: repeat(2, 50%);
+    height: 500px;
+    width: 80%;
+    margin: auto auto;
+}
+
+.aboutImg {
+    width: 550px;
+    border-radius: 10px;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin: auto 0;
+}
+
+.aboutGridContainer>p {
+    font-size: 25px;
+    opacity: 0.7;
+    padding-top: 20px;
+    color: var(--clr-sec-text);
+}
+
+.experienceSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    color: var(--clr-sec-text);
+}
+
+.yearsExp,
+.projects,
+.workExp {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.yearsExp :nth-child(2),
+.projects :nth-child(2),
+.workExp :nth-child(2) {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.cvBtn {
+    margin: auto 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 60px;
+    width: 240px;
+    border-radius: 10px;
+    border-width: 0;
+    font-size: 25px;
+    background-color: var(--clr-accent);
+    /* color: white; */
+    color: var(--clr-text);
+    cursor: pointer;
+    transition: transform ease-in 200ms;
+}
+
+.downloadIco {
+    width: 30px;
+    /* fill: white; */
+    fill: var(--clr-text);
+    margin-left: 5px;
+}
+
