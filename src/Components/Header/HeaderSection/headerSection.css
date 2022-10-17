@@ -10,21 +10,21 @@
     background-color: var(--bg-clr-primary);
 }
 
-.headerSection  h1 {
+.headerSection h1 {
     margin: auto 0;
     font-size: 70px;
     opacity: 0.7;
     color: var(--clr-sec-text);
 }
 
-.headerSection  h2 {
+.headerSection h2 {
     margin: auto 0;
     font-size: 40px;
     opacity: 0.5;
     color: var(--clr-sec-text);
 }
 
-.headerSection  p {
+.headerSection p {
     margin: auto 0;
     font-size: 20px;
     opacity: 0.6;
@@ -39,14 +39,17 @@
     border-width: 0;
     font-size: 20px;
     background-color: rgb(110, 94, 217);
-    color: white;
-    /* color: var(--clr-text); */
     cursor: pointer;
     transition: transform ease-in 200ms;
 }
 
-.headerSection button:hover{
+.headerSection button:hover {
     transform: translateY(10px);
+}
+
+.headerSection button a {
+    text-decoration: none;
+    color: white;
 }
 
 .contactIco {
@@ -80,7 +83,7 @@
     width: 450px;
 }
 
-.verticalSocials{
+.verticalSocials {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -90,12 +93,12 @@
     left: 0;
 }
 
-.verticalSocials *{
+.verticalSocials * {
     width: 25px;
     fill: var(--clr-accent);
 }
 
-.scrollDown{
+.scrollDown {
     position: absolute;
     bottom: 30px;
     left: 225px;
@@ -107,21 +110,21 @@
     transition: transform ease-in 200ms;
 }
 
-.scrollDown:hover{
+.scrollDown:hover {
     transform: translateY(10px);
 }
 
-.scrollDown p{
+.scrollDown p {
     font-size: 20px;
     color: var(--clr-sec-text);
 }
 
-.scrollIcons{
+.scrollIcons {
     margin: auto 10px;
     height: 30px;
     fill: var(--clr-accent);
 }
 
-.downIcon{
+.downIcon {
     height: 20px;
 }

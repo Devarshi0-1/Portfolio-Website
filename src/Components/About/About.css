@@ -83,16 +83,18 @@
     border-width: 0;
     font-size: 25px;
     background-color: var(--clr-accent);
-    /* color: white; */
-    color: var(--clr-text);
+    color: white;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding: 6px 10px;
     transition: transform ease-in 200ms;
 }
 
 .downloadIco {
     width: 30px;
     /* fill: white; */
-    fill: var(--clr-text);
+    fill: white;
     margin-left: 5px;
 }
 
