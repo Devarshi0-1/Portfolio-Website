@@ -3,7 +3,7 @@ import ProjectSlide from '../Project Slide/ProjectSlide'
 
 function Projects() {
     return (
-        <section id='projects'>
+        <section id='projects' className='flex-center'>
             <h1>Projects</h1>
             <h2>Most Recent Work</h2>
             <ProjectSlide />

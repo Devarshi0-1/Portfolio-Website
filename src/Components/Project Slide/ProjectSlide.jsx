@@ -1,12 +1,12 @@
 import './projectSlide.css'
-import slide1Img from '../assets/calcProject.png'
-import slide2Img from '../assets/sPsProject.png'
-import slide3Img from '../assets/toDoProject.png'
-import slide4Img from '../assets/portfolio.png'
-import htmlIcon from '../assets/html.svg'
-import cssIcon from '../assets/css.svg'
-import jsIcon from '../assets/js.svg'
-import reactIcon from '../assets/react.svg'
+import slide1Img from '../../assets/calcProject.png'
+import slide2Img from '../../assets/sPsProject.png'
+import slide3Img from '../../assets/toDoProject.png'
+import slide4Img from '../../assets/portfolio.png'
+import htmlIcon from '../../assets/html.svg'
+import cssIcon from '../../assets/css.svg'
+import jsIcon from '../../assets/js.svg'
+import reactIcon from '../../assets/react.svg'
 
 export default function ProjectSlide() {
 
@@ -60,7 +60,7 @@ export default function ProjectSlide() {
                         <img className='slideImgs' src={data.projectImgURL} alt="Stone Paper Scissors Website Image" />
                     </a>
                 </div>
-                <div className='slideTechStackUsed'>
+                <div className='slideTechStackUsed flex-center'>
                     <h3>Tech Stack Used</h3>
                     <div className={`stackLogos ${data.techStackImg4 ? 'withReact' : ''}`}>
                         <img src={htmlIcon} />
@@ -69,11 +69,11 @@ export default function ProjectSlide() {
                         {data.techStackImg4 && <img src={reactIcon} />}
                     </div>
                 </div>
-                <div className='slideSummary'>
+                <div className='slideSummary flex-center'>
                     <h3>Summary</h3>
                     <p>{data.summaryText}</p>
                 </div>
-                <div className='slideCTA'>
+                <div className='slideCTA flex-center'>
                     <a href={data.projectURL} target={`${data.target_self ? '_self' : '_blank'}`} >Visit</a>
                     <a href={data.repoURL} target='_blank'>GitHub Repo</a>
                 </div>
@@ -82,9 +82,9 @@ export default function ProjectSlide() {
     })
 
     return (
-        <div className="projectsContainer">
-            <div className="cardsOuterCont">
-                <div className="cardsInnerCont">
+        <div className="projectsContainer flex-center">
+            <div className="cardsOuterCont flex-center">
+                <div className="cardsInnerCont flex-center">
                     {renderSlides}
                 </div>
             </div>

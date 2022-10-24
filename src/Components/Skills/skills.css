@@ -3,9 +3,7 @@
     width: 80%;
     margin: 0 auto;
     padding-top: 90px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: var(--bg-clr-primary);
 }
 
@@ -33,9 +31,6 @@
 }
 
 .skillsGridContainer span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--clr-accent-light);
     border-radius: 343px 274px 278px 257px;
     height: 250px;

@@ -3,9 +3,6 @@
     height: 100%;
     width: 80%;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     background-color: var(--bg-clr-primary);
 }
@@ -56,7 +53,6 @@
     width: 20px;
     margin-left: 5px;
     fill: white;
-    /* fill: var(--clr-text); */
 }
 
 .headerGridContainer {
@@ -85,7 +81,6 @@
 
 .verticalSocials {
     position: absolute;
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 50px;
@@ -99,12 +94,12 @@
 }
 
 .scrollDown {
+    display: flex;
     position: absolute;
     bottom: 30px;
     left: 225px;
     width: 200px;
     height: 50px;
-    display: flex;
     text-decoration: none;
     cursor: pointer;
     transition: transform ease-in 200ms;
@@ -127,4 +122,12 @@
 
 .downIcon {
     height: 20px;
+}
+
+@media screen and (max-width:1432px) {
+    .headerSection{
+        background-color: red;
+    }
+
+    
 }

@@ -3,9 +3,6 @@ footer{
     height: 300px;
     width: 100%;
     background-color: var(--clr-accent);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .footerContentCont{
@@ -43,9 +40,7 @@ footer{
 
 .socials{
     height: 40%;
-    display: flex;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .socials > *{

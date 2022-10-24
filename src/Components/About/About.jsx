@@ -1,11 +1,11 @@
 import './About.css'
-import aboutImg from '../assets/aboutImg.jpg'
-import CV from '../assets/My_Resume.pdf'
+import aboutImg from '../../assets/aboutImg.jpg'
+import CV from '../../assets/My_Resume.pdf'
 
 function About() {
     return (
         <>
-            <section id='about'>
+            <section id='about' className='flex-center'>
                 <h1>About Me</h1>
                 <h2>My Introduction</h2>
                 <div className="aboutGridContainer">
