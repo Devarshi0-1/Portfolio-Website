@@ -1,13 +1,11 @@
 import './headerSection.css'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 function HeaderSection({ profileImg }) {
     return (
         <section className='headerSection flex-center'>
             <div className="headerGridContainer">
                 <div className="blob">
-                    {/* <img className='profileImg' src={profileImg} loading="lazy" /> */}
-                    <LazyLoadImage effect='blur' className='profileImg' src={profileImg}/>
+                    <img className='profileImg' src={profileImg} loading="lazy" />
                 </div>
                 <h1>Hi, I'm Devarshi</h1>
                 <h2>FrontEnd Developer</h2>

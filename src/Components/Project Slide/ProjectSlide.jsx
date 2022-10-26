@@ -7,8 +7,6 @@ import htmlIcon from '../../assets/html.svg'
 import cssIcon from '../../assets/css.svg'
 import jsIcon from '../../assets/js.svg'
 import reactIcon from '../../assets/react.svg'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
-
 
 export default function ProjectSlide() {
 
@@ -59,22 +57,16 @@ export default function ProjectSlide() {
             <div className="slide">
                 <div className='slideImgCont'>
                     <a href={data.projectURL} target={`${data.target_self ? '_self' : '_blank'}`}>
-                        {/* <img className='slideImgs' src={data.projectImgURL} alt="Project Imgs" loading="lazy" /> */}
-                        <LazyLoadImage effect='blur' className='slideImgs' src={data.projectImgURL} alt="Project Imgs" />
+                        <img className='slideImgs' src={data.projectImgURL} alt="Project Imgs" loading="lazy" />
                     </a>
                 </div>
                 <div className='slideTechStackUsed flex-center'>
                     <h3>Tech Stack Used</h3>
                     <div className={`stackLogos ${data.techStackImg4 ? 'withReact' : ''}`}>
-                        {/* <img src={htmlIcon} loading="lazy" />
+                        <img src={htmlIcon} loading="lazy" />
                         <img src={cssIcon} loading="lazy" />
-                        <img src={jsIcon} loading="lazy" /> */}
-
-                        <LazyLoadImage effect='blur' src={htmlIcon}  />
-                        <LazyLoadImage effect='blur' src={cssIcon}  />
-                        <LazyLoadImage effect='blur' src={jsIcon}  />
-                        {/* {data.techStackImg4 && <img src={reactIcon}  />} */}
-                        {data.techStackImg4 && <LazyLoadImage effect='blur' src={reactIcon}  />}
+                        <img src={jsIcon} loading="lazy"/>
+                        {data.techStackImg4 && <img src={reactIcon} loading="lazy" />}
                     </div>
                 </div>
                 <div className='slideSummary flex-center'>

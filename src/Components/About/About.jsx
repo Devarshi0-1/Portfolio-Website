@@ -1,8 +1,6 @@
 import './About.css'
 import aboutImg from '../../assets/aboutImg.jpg'
 import CV from '../../assets/My_Resume.pdf'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
-
 
 function About() {
     return (
@@ -10,8 +8,7 @@ function About() {
             <h1>About Me</h1>
             <h2>My Introduction</h2>
             <div className="aboutGridContainer">
-                {/* <img className='aboutImg' src={aboutImg} loading="lazy" /> */}
-                <LazyLoadImage effect='blur' className='aboutImg' src={aboutImg} />
+                <img className='aboutImg' src={aboutImg} loading="lazy" />
                 <p>Web developer, with extensive knowledge and years of experience, working in web technologies and UI/UX, delivering quality work.</p>
                 <div className="experienceSection">
                     <div className='yearsExp'>
