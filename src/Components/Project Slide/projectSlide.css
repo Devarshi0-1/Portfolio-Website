@@ -142,23 +142,45 @@
 
 /* SMALL DEVICES */
 @media screen and (max-width: 600px) {
-    .projectsContainer *{
-        border: 1px solid black;
-    }
-
-    .projectsContainer{
+    .projectsContainer {
         height: 60%;
     }
 
-    .slide{
-        width: 600px;
+    .cardsOuterCont {
+        height: 70%;
     }
 
-.slideImgCont{
-    height: 200px;
-}
-
-    .slideImgs{
+    .slide {
+        width: 600px;
+        height: 200px;
+    }
+    
+    .slideImgCont {
+        height: 200px;
+    }
+    
+    .slideImgs {
         width: 300px;
+    }
+
+    .slideTechStackUsed {
+        width: 250px;
+        margin-top: 30px;
+    }
+
+    .slideSummary {
+        display: none;
+    }
+
+    .slideCTA>a {
+        padding: 5px 20px;
+        border-radius: 5px;
+        border-width: 0;
+        font-size: 18px;
+        background-color: var(--clr-accent);
+        color: white;
+        cursor: pointer;
+        transition: transform ease-in 200ms;
+        text-decoration: none;
     }
 }

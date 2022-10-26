@@ -64,15 +64,14 @@
     .skillsGridContainer{
         margin: 0;
         height: 250px;
-        border: 1px solid red;
     }
     
     .skillsGridContainer span{
-        height: 50px;
-        width: 50px;
+        height: 80px;
+        width: 80px;
     }
 
     .skillsGridContainer img{
-        height: 35px;
+        height: 65px;
     }
 }

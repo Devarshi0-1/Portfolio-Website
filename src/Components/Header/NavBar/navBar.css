@@ -1,7 +1,7 @@
 nav {
     position: fixed;
     height: 10%;
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
     padding: 0 150px;
     z-index: 1;
@@ -50,21 +50,22 @@ nav {
 
 @media screen and (max-width: 600px) {
     nav {
-        width: 100vw;
         bottom: 0;
         padding: 0 100px;
     }
 
     .navList {
-        width: 80%;
         font-size: 17px;
+        width: 100vw;
     }
 
     .navList li a {
-        margin: 10px;
+        margin: 3px;
+        font-size: 13px;
     }
 
-    #navName{
-        margin: 0;
+    .navList>span>img {
+        width: 30px;
+        height: 40px;
     }
 }
