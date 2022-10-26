@@ -154,11 +154,11 @@
         width: 600px;
         height: 200px;
     }
-    
+
     .slideImgCont {
         height: 200px;
     }
-    
+
     .slideImgs {
         width: 300px;
     }
@@ -182,5 +182,9 @@
         cursor: pointer;
         transition: transform ease-in 200ms;
         text-decoration: none;
+    }
+
+    .cardsInnerCont::-webkit-scrollbar {
+        height: 5px;
     }
 }
