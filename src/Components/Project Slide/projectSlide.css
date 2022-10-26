@@ -38,7 +38,6 @@
 
 .slide {
     flex-shrink: 0;
-    height: 459px;
     height: 90%;
     width: 1126px;
     background-color: var(--bg-clr-primary);
@@ -95,7 +94,6 @@
     margin: 0 10px;
 }
 
-
 .stackLogos> :nth-child(2) {
     width: 35px;
 }
@@ -140,4 +138,27 @@
     background-color: transparent;
     color: var(--clr-sec-text);
     border: 1px solid var(--clr-accent);
+}
+
+/* SMALL DEVICES */
+@media screen and (max-width: 600px) {
+    .projectsContainer *{
+        border: 1px solid black;
+    }
+
+    .projectsContainer{
+        height: 60%;
+    }
+
+    .slide{
+        width: 600px;
+    }
+
+.slideImgCont{
+    height: 200px;
+}
+
+    .slideImgs{
+        width: 300px;
+    }
 }

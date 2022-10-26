@@ -4,6 +4,7 @@
     margin: 0 auto;
     flex-direction: column;
     background-color: var(--bg-clr-primary);
+    overflow: hidden;
 }
 
 #contact h1 {

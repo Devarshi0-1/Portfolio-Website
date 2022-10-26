@@ -57,16 +57,16 @@ export default function ProjectSlide() {
             <div className="slide">
                 <div className='slideImgCont'>
                     <a href={data.projectURL} target={`${data.target_self ? '_self' : '_blank'}`}>
-                        <img className='slideImgs' src={data.projectImgURL} alt="Stone Paper Scissors Website Image" />
+                        <img className='slideImgs' src={data.projectImgURL} alt="Project Imgs" loading="lazy" />
                     </a>
                 </div>
                 <div className='slideTechStackUsed flex-center'>
                     <h3>Tech Stack Used</h3>
                     <div className={`stackLogos ${data.techStackImg4 ? 'withReact' : ''}`}>
-                        <img src={htmlIcon} />
-                        <img src={cssIcon} />
-                        <img src={jsIcon} />
-                        {data.techStackImg4 && <img src={reactIcon} />}
+                        <img src={htmlIcon} loading="lazy" />
+                        <img src={cssIcon} loading="lazy" />
+                        <img src={jsIcon} loading="lazy"/>
+                        {data.techStackImg4 && <img src={reactIcon} loading="lazy" />}
                     </div>
                 </div>
                 <div className='slideSummary flex-center'>

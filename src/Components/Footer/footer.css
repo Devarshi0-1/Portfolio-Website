@@ -55,3 +55,15 @@ footer{
     left: 35%;
     opacity: 0.6;
 }
+
+/* MEDIUM DEVICES */
+
+@media screen and (max-width: 1024px) {}
+
+/* SMALL DEVICES */
+
+@media screen and (max-width: 600px) {
+    footer{
+        overflow: hidden;
+    }
+}

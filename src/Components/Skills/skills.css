@@ -5,6 +5,7 @@
     padding-top: 90px;
     flex-direction: column;
     background-color: var(--bg-clr-primary);
+    overflow: hidden;
 }
 
 #skills h1 {
@@ -47,4 +48,31 @@
 
 .skillsGridContainer img:hover{
     transform: scale(1.2) rotate(20deg);
+}
+
+/* SMALL DEVICES */
+@media screen and (max-width: 600px) {
+
+    #skills{
+        height: 80vh;
+    }
+
+    #skills h1{
+        font-size: 50px;
+    }
+
+    .skillsGridContainer{
+        margin: 0;
+        height: 250px;
+        border: 1px solid red;
+    }
+    
+    .skillsGridContainer span{
+        height: 50px;
+        width: 50px;
+    }
+
+    .skillsGridContainer img{
+        height: 35px;
+    }
 }

@@ -91,8 +91,59 @@
 
 .downloadIco {
     width: 30px;
-    /* fill: white; */
     fill: white;
     margin-left: 5px;
 }
 
+/* MEDIUM DEVICES */
+
+@media screen and (max-width: 1024px) {}
+
+/* SMALL DEVICES */
+
+@media screen and (max-width: 600px) {
+    #about h1 {
+        font-size: 50px;
+    }
+
+    .aboutGridContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutImg {
+        width: 240px;
+    }
+
+    .aboutGridContainer>p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .experienceSection {
+        margin-top: 10px;
+    }
+
+    .yearsExp,
+    .projects,
+    .workExp {
+        font-size: 20px;
+    }
+
+    .yearsExp :nth-child(2),
+    .projects :nth-child(2),
+    .workExp :nth-child(2) {
+        font-size: 10px;
+    }
+
+    .cvBtn{
+        margin: auto;
+        height: 35px;
+        width: 150px;
+        font-size: 15px;
+    }
+
+    .downloadIco{
+        width: 15px;
+    }
+}

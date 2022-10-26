@@ -16,6 +16,10 @@ nav {
     font-size: 25px;
 }
 
+.navList> :first-child a {
+    font-weight: 900;
+}
+
 .navList li a {
     margin: 40px;
     text-decoration: none;
@@ -27,7 +31,7 @@ nav {
     margin-right: auto;
 }
 
-.navList > span{
+.navList>span {
     width: 50px;
     height: 50px;
 }
@@ -36,4 +40,31 @@ nav {
     width: 45px;
     margin-bottom: auto auto;
     cursor: pointer;
+}
+
+/* MEDIUM DEVICES */
+
+@media screen and (max-width: 1024px) {}
+
+/* SMALL DEVICES */
+
+@media screen and (max-width: 600px) {
+    nav {
+        width: 100vw;
+        bottom: 0;
+        padding: 0 100px;
+    }
+
+    .navList {
+        width: 80%;
+        font-size: 17px;
+    }
+
+    .navList li a {
+        margin: 10px;
+    }
+
+    #navName{
+        margin: 0;
+    }
 }

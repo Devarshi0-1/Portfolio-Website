@@ -19,7 +19,7 @@ function NavBar({ sunImg, moonImg }) {
     return (
         <nav className='flex-center'>
             <ul className="navList flex-center">
-                <li id='navName'><a href="/">Devarshi</a></li>
+                <li id='navName'><a href="/"><b>Devarshi</b></a></li>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>

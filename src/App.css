@@ -34,6 +34,7 @@
 
 body {
     background-color: var(--bg-clr-primary);
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -72,8 +73,14 @@ body {
     fill: white;
 }
 
-:where(.flex-center){
+:where(.flex-center) {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .scrollUp {
+        display: none;
+    }
 }

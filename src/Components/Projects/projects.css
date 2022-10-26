@@ -18,3 +18,14 @@
     color: var(--clr-sec-text);
 }
 
+/* SMALL DEVICES */
+@media screen and (max-width: 600px) {
+    #projects{
+        width: 100%;
+    }
+
+    #projects h1{
+        font-size: 50px;
+    }
+}
+
