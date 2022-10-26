@@ -36,6 +36,28 @@
     height: 250px;
     width: 250px;
     flex-shrink: 0;
+    animation: blobAnimation 10000ms ease infinite alternate;
+}
+.skillsGridContainer > :nth-child(2){
+    animation: blobAnimation 10000ms 1s ease infinite alternate;
+}
+.skillsGridContainer > :nth-child(3){
+    animation: blobAnimation 10000ms 2s ease infinite alternate;
+}
+.skillsGridContainer > :nth-child(4){
+    animation: blobAnimation 10000ms 3s ease infinite alternate;
+}
+.skillsGridContainer > :nth-child(5){
+    animation: blobAnimation 10000ms 4s ease infinite alternate;
+}
+.skillsGridContainer > :nth-child(6){
+    animation: blobAnimation 10000ms 5s ease infinite alternate;    
+}
+.skillsGridContainer > :nth-child(7){
+    animation: blobAnimation 10000ms 6s ease infinite alternate;
+}
+.skillsGridContainer > :nth-child(8){
+    animation: blobAnimation 10000ms 7s ease infinite alternate;
 }
 
 .skillsGridContainer img {
