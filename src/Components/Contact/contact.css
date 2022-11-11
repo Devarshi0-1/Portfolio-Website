@@ -139,6 +139,11 @@
     color: white;
 }
 
+.contactGrid>:last-child a {
+    text-decoration: none;
+    color: white;
+}
+
 .contactIcons {
     width: 30px;
     fill: white;

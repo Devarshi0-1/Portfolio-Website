@@ -1,4 +1,4 @@
-import './projectSlide.css'
+    import './projectSlide.css'
 import slide1Img from '../../assets/calcProject.png'
 import slide2Img from '../../assets/sPsProject.png'
 import slide3Img from '../../assets/toDoProject.png'
@@ -12,6 +12,7 @@ export default function ProjectSlide() {
 
     const containerData = [
         {
+            key: slide1Img,
             projectURL: 'https://react0vite0calculator.netlify.app/',
             projectImgURL: slide1Img,
             techStackImg1: htmlIcon,
@@ -22,6 +23,7 @@ export default function ProjectSlide() {
             repoURL: 'https://github.com/Devarshi0-1/Calculator-v3'
         },
         {
+            key: slide2Img,
             projectURL: 'https://devarshi0stonepaperscissors.netlify.app/',
             projectImgURL: slide2Img,
             techStackImg1: htmlIcon,
@@ -31,6 +33,7 @@ export default function ProjectSlide() {
             repoURL: 'https://github.com/Devarshi0-1/Stone-Paper-Scissors'
         },
         {
+            key: slide3Img,
             projectURL: 'https://devarshi0todolist.netlify.app/',
             projectImgURL: slide3Img,
             techStackImg1: htmlIcon,
@@ -40,6 +43,7 @@ export default function ProjectSlide() {
             repoURL: 'https://github.com/Devarshi0-1/To-Do'
         },
         {
+            key: slide4Img,
             projectURL: '#home',
             projectImgURL: slide4Img,
             techStackImg1: htmlIcon,
@@ -54,7 +58,7 @@ export default function ProjectSlide() {
 
     const renderSlides = containerData.map(data => {
         return (
-            <div className="slide">
+            <div className="slide" key={data.key}>
                 <div className='slideImgCont'>
                     <a href={data.projectURL} target={`${data.target_self ? '_self' : '_blank'}`}>
                         <img className='slideImgs' src={data.projectImgURL} alt="Project Imgs" loading="lazy" />

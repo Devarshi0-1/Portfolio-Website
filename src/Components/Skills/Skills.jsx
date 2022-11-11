@@ -12,7 +12,7 @@ function Skills() {
 
     const imageSrc = [htmlIcon, cssIcon, jsIcon, reactIcon, nodeIcon,tailwindIcon,bootstrapIcon,githubIcon]
     const mappedComp = imageSrc.map(src => {
-        return <span className='flex-center'><img src={src} /></span>
+        return <span className='flex-center' key={src}><img src={src} /></span>
     })
 
     return (

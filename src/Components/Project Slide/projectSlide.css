@@ -17,6 +17,7 @@
     justify-content: unset;
     gap: 30px;
     padding: 0 30px;
+    scroll-snap-type: x mandatory;
 }
 
 .cardsInnerCont::-webkit-scrollbar {
@@ -46,6 +47,7 @@
     grid-template-columns: 3fr 1.5fr;
     border-radius: 15px;
     box-shadow: 0 0 20px 0 rgba(81, 81, 81, 0.289);
+    scroll-snap-align: start;
     transition: box-shadow 500ms;
 }
 
@@ -182,6 +184,10 @@
         cursor: pointer;
         transition: transform ease-in 200ms;
         text-decoration: none;
+    }
+
+    .cardsInnerCont{
+        padding: 0 13px;
     }
 
     .cardsInnerCont::-webkit-scrollbar {
