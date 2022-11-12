@@ -18,13 +18,6 @@
 }
 
 .dark_mode {
-    --bg-clr-primary: white;
-    --clr-accent: rgb(110, 94, 217);
-    --clr-accent-light: rgba(111, 94, 219, 0.7);
-    --clr-text: white;
-    --clr-sec-text: black;
-
-
     --bg-clr-primary: rgb(32, 32, 32);
     --clr-accent: rgb(110, 94, 217);
     --clr-accent-light: rgba(111, 94, 219, 0.7);

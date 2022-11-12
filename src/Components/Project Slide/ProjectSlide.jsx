@@ -1,4 +1,4 @@
-    import './projectSlide.css'
+import './projectSlide.css'
 import slide1Img from '../../assets/calcProject.png'
 import slide2Img from '../../assets/sPsProject.png'
 import slide3Img from '../../assets/toDoProject.png'
