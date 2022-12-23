@@ -2,6 +2,7 @@
     height: 100vh;
     width: 80%;
     margin: 0 auto;
+    margin-top: 150px;
     flex-direction: column;
     background-color: var(--bg-clr-primary);
 }
@@ -20,7 +21,7 @@
 }
 
 .contactContainer {
-    height: 80%;
+    height: 70%;
     width: 90%;
     display: grid;
     grid-template-columns: 4fr 2fr;
@@ -28,16 +29,16 @@
     border-radius: 10px;
 }
 
+
 .formCont {
     width: 90%;
-    height: 80%;
-    margin: auto auto;
+    margin: 20px;
     display: grid;
     grid-template-rows: 1fr 9fr;
 }
 
 .formCont>h2 {
-    font-size: 40px;
+    font-size: 35px;
     color: var(--clr-sec-text);
     opacity: 0.7;
 }
@@ -45,7 +46,7 @@
 .formCont form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-rows: .3fr .5fr 1.5fr 1fr;
     margin-top: 20px;
     column-gap: 40px;
     row-gap: 20px;
@@ -55,7 +56,7 @@
 .formCont form textarea {
     border: 1px solid var(--clr-sec-text);
     border-radius: 5px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 200;
     padding: 5px 10px;
     color: var(--clr-sec-text);
@@ -100,10 +101,11 @@
 .contactOuterCont {
     background-color: var(--clr-accent);
     border-radius: 0 10px 10px 0;
+    height: 95%;
 }
 
 .contactInfoCont {
-    width: 80%;
+    width: 90%;
     height: 80%;
     flex-direction: column;
 }
@@ -116,7 +118,7 @@
 
 .contactGrid {
     display: grid;
-    height: 50%;
+    height: 60%;
     width: 100%;
     margin: 0 auto;
     grid-template-columns: 2fr 8fr;
