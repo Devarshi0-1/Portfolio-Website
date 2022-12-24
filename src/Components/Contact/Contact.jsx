@@ -29,7 +29,7 @@ function Contact() {
                         <input type="email" placeholder='Your Email' name='email' />
                         <input type="text" placeholder='Project' name='subject' />
                         <textarea placeholder='Message' name='message'></textarea>
-                        <button>Send Message</button>
+                        <button className='primaryBtn'>Send Message</button>
                     </form>
                 </div>
                 <div className="contactOuterCont flex-center">

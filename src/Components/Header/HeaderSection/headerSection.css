@@ -23,7 +23,6 @@
     margin: 0 auto;
     position: relative;
     background-color: var(--bg-clr-primary);
-    z-index: -100;
 }
 
 .headerGridContainer {
@@ -54,62 +53,6 @@
     font-size: 20px;
     opacity: 0.6;
     color: var(--clr-sec-text);
-}
-
-.headerSection button {
-    position: relative;
-    height: 60px;
-    width: 200px;
-    margin: auto 0;
-    border-radius: 10px;
-    border-width: 0;
-    font-size: 20px;
-    background-color: transparent;
-    cursor: pointer;
-    pointer-events: all;
-    transition: transform ease-in 200ms;
-}
-
-.headerSection button::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    outline: 1px solid red;
-    z-index: -2;
-    background-color: rgb(110, 94, 217);
-    pointer-events: none;
-}
-
-.headerSection button::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    transform: scaleX(0);
-    background-color: red;
-    border-radius: 10px;
-    outline: 1px solid red;
-    pointer-events: none;
-}
-
-.headerSection button:hover::after {
-    transform: scaleX(1);
-}
-
-.headerSection button:hover {
-    transform: translateY(10px);
-}
-
-.headerSection button a {
-    text-decoration: none;
-    color: white;
 }
 
 .contactIco {

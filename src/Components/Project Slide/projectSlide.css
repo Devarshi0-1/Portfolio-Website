@@ -124,22 +124,62 @@
     justify-content: space-evenly;
 }
 
-.slideCTA>a {
-    padding: 5px 20px;
-    border-radius: 5px;
-    border-width: 0;
-    font-size: 25px;
-    background-color: var(--clr-accent);
-    color: white;
-    cursor: pointer;
-    transition: transform ease-in 200ms;
+.primaryBtn a,.secondaryBtn a{
     text-decoration: none;
+    color: var(--clr-sec-text);
 }
 
-.slideCTA> :nth-child(2) {
+.primaryBtn.visitBtn,
+.secondaryBtn {
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+
+.primaryBtn.visitBtn {
+    height: unset;
+    width: unset;
+    background-color: var(--clr-accent);
+    cursor: pointer;
+}
+
+.secondaryBtn {
+    position: relative;
+    overflow: hidden;
     background-color: transparent;
-    color: var(--clr-sec-text);
-    border: 1px solid var(--clr-accent);
+    border: 0;
+    box-shadow: inset 0 0 2px var(--clr-accent);
+    z-index: 3;
+}
+
+.secondaryBtn::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.secondaryBtn::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms;
+    background-color: #82AAE3;
+    z-index: -1;
+}
+
+.secondaryBtn:hover::after {
+    transform: scaleX(1);
 }
 
 /* SMALL DEVICES */
@@ -186,7 +226,7 @@
         text-decoration: none;
     }
 
-    .cardsInnerCont{
+    .cardsInnerCont {
         padding: 0 13px;
     }
 

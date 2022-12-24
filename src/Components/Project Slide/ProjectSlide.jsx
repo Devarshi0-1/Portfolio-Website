@@ -78,8 +78,8 @@ export default function ProjectSlide() {
                     <p>{data.summaryText}</p>
                 </div>
                 <div className='slideCTA flex-center'>
-                    <a href={data.projectURL} target={`${data.target_self ? '_self' : '_blank'}`} >Visit</a>
-                    <a href={data.repoURL} target='_blank'>GitHub Repo</a>
+                    <button className='primaryBtn visitBtn'><a href={data.projectURL} target={`${data.target_self ? '_self' : '_blank'}`} >Visit</a></button>
+                    <button className='secondaryBtn'><a href={data.repoURL} target='_blank'>GitHub Repo</a></button>
                 </div>
             </div>
         )

@@ -10,7 +10,7 @@ function HeaderSection({ profileImg }) {
                 <h1>Hi, I'm Devarshi</h1>
                 <h2>FrontEnd Developer</h2>
                 <p>High level experience in web design and development knowledge, producing quality work.</p>
-                <button type='button'>
+                <button className='primaryBtn'>
                     <a href="#contact">
                         Contact Me
                         <svg className='contactIco' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">

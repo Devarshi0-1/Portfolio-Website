@@ -72,26 +72,8 @@
     opacity: 0.7;
 }
 
-.cvBtn {
-    margin: auto 0;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    height: 60px;
-    width: 240px;
-    border-radius: 10px;
-    border-width: 0;
-    font-size: 25px;
-    background-color: var(--clr-accent);
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    padding: 6px 10px;
-    transition: transform ease-in 200ms;
-}
-
 .downloadIco {
-    width: 30px;
+    width: 20px;
     fill: white;
     margin-left: 5px;
 }

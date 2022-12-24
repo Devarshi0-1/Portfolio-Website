@@ -73,6 +73,57 @@ body {
     align-items: center;
 }
 
+.primaryBtn {
+    position: relative;
+    overflow: hidden;
+    height: 60px;
+    width: 200px;
+    margin: auto 0;
+    border-radius: 10px;
+    border-width: 0;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform ease-in 200ms;
+    background-color: transparent;
+    z-index: 3;
+}
+
+.primaryBtn::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: var(--clr-accent);
+    z-index: -1;
+}
+
+.primaryBtn::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms;
+    background-color: rgb(78, 66, 156);
+    z-index: -1;
+}
+
+.primaryBtn:hover::after {
+    transform: scaleX(1);
+}
+
+.primaryBtn>a {
+    text-decoration: none;
+    color: white;
+}
+
 @media screen and (max-width: 600px) {
     .scrollUp {
         display: none;
