@@ -16,6 +16,7 @@
     justify-content: unset;
     gap: 30px;
     padding: 0 30px;
+    scroll-padding: 30px;
     scroll-snap-type: x mandatory;
 }
 
@@ -124,7 +125,8 @@
     justify-content: space-evenly;
 }
 
-.primaryBtn a,.secondaryBtn a{
+.primaryBtn a,
+.secondaryBtn a {
     text-decoration: none;
     color: var(--clr-sec-text);
 }
@@ -180,6 +182,14 @@
 
 .secondaryBtn:hover::after {
     transform: scaleX(1);
+}
+
+.secondaryBtn a{
+    transition: color 500ms;
+}
+
+.secondaryBtn:hover a{
+    color: white;
 }
 
 /* SMALL DEVICES */

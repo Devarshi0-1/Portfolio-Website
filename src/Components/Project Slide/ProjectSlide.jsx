@@ -13,14 +13,13 @@ export default function ProjectSlide() {
     const containerData = [
         {
             key: slide1Img,
-            projectURL: 'https://react0vite0calculator.netlify.app/',
-            projectImgURL: slide1Img,
+            projectURL: 'https://devarshi0todolist.netlify.app/',
+            projectImgURL: slide3Img,
             techStackImg1: htmlIcon,
             techStackImg2: cssIcon,
             techStackImg3: jsIcon,
-            techStackImg4: reactIcon,
-            summaryText: <>A simple calculator with eye pleasing UI and optimal UX Uses <strong>3D and 2D CSS animations</strong> with <strong>cool Dark Mode</strong> Supports <strong>full keyboard controls</strong></>,
-            repoURL: 'https://github.com/Devarshi0-1/Calculator-v3'
+            summaryText: <>Organize yourself writing stuff you need TO DO. Build with UI/UX as a top priority,uses <strong>Glass Morphism UI Style</strong>, use this tool to look the stunning animation it provides.</>,
+            repoURL: 'https://github.com/Devarshi0-1/To-Do'
         },
         {
             key: slide2Img,
@@ -34,13 +33,14 @@ export default function ProjectSlide() {
         },
         {
             key: slide3Img,
-            projectURL: 'https://devarshi0todolist.netlify.app/',
-            projectImgURL: slide3Img,
+            projectURL: 'https://react0vite0calculator.netlify.app/',
+            projectImgURL: slide1Img,
             techStackImg1: htmlIcon,
             techStackImg2: cssIcon,
             techStackImg3: jsIcon,
-            summaryText: <>Organize yourself writing stuff you need TO DO. Build with UI/UX as a top priority,uses <strong>Glass Morphism UI Style</strong>, use this tool to look the stunning animation it provides.</>,
-            repoURL: 'https://github.com/Devarshi0-1/To-Do'
+            techStackImg4: reactIcon,
+            summaryText: <>A simple calculator with eye pleasing UI and optimal UX Uses <strong>3D and 2D CSS animations</strong> with <strong>cool Dark Mode</strong> Supports <strong>full keyboard controls</strong></>,
+            repoURL: 'https://github.com/Devarshi0-1/Calculator-v3'
         },
         {
             key: slide4Img,
@@ -69,7 +69,7 @@ export default function ProjectSlide() {
                     <div className={`stackLogos ${data.techStackImg4 ? 'withReact' : ''}`}>
                         <img src={htmlIcon} loading="lazy" />
                         <img src={cssIcon} loading="lazy" />
-                        <img src={jsIcon} loading="lazy"/>
+                        <img src={jsIcon} loading="lazy" />
                         {data.techStackImg4 && <img src={reactIcon} loading="lazy" />}
                     </div>
                 </div>

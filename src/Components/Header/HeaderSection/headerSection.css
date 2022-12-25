@@ -178,6 +178,7 @@
 
     .scrollDown {
         left: 50%;
+        bottom: 6%;
         width: 140px;
         height: 30px;
     }

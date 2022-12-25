@@ -4,8 +4,8 @@ nav {
     width: 100vw;
     margin: 0 auto;
     padding: 0 150px;
-    z-index: 1;
     background-color: var(--bg-clr-primary);
+    z-index: 10000;
     box-shadow: 5px 0 20px rgb(111, 111, 111);
 }
 
@@ -74,16 +74,16 @@ nav {
     }
 
     .navList li {
-        margin-inline: 10px;
+        margin-inline: 8px;
     }
 
     .navList li a {
-        margin: 3px;
         font-size: 13px;
     }
 
     .navList>span>img {
         width: 30px;
         height: 40px;
+        transform: translateY(-12px);
     }
 }

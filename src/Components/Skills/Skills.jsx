@@ -12,7 +12,11 @@ function Skills() {
 
     const imageSrc = [htmlIcon, cssIcon, jsIcon, reactIcon, nodeIcon,tailwindIcon,bootstrapIcon,githubIcon]
     const mappedComp = imageSrc.map(src => {
-        return <span className='flex-center' key={src}><img src={src} /></span>
+        return (
+            <span className='flex-center' key={src}>
+                <img src={src} />
+            </span>
+        )
     })
 
     return (
@@ -20,7 +24,7 @@ function Skills() {
             <h1>Skills</h1>
             <h2>My areas of expertise</h2>
             <div className="skillsGridContainer">
-                {mappedComp}
+                {mappedComp} 
             </div>
         </section>
     )
