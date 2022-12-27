@@ -102,11 +102,12 @@ nav {
         font-weight: 900;
         transform: translateX(0%);
         opacity: 0.6;
-        transition: transform 500ms;
+        transition: transform 500ms, opacity 500ms;
     }
 
     .topHeading.isActive {
         transform: translateX(-130%);
+        opacity: 0;
     }
 
     nav {
@@ -118,12 +119,14 @@ nav {
         height: 65%;
         padding: 10px;
         border-radius: 10px;
+        opacity: 0;
         transform: translateX(100%);
-        transition: transform 500ms;
+        transition: transform 500ms, opacity 500ms;
     }
 
     nav.isActive {
         transform: translateX(-5%);
+        opacity: 1;
     }
 
     .navList {

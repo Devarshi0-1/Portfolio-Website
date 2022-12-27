@@ -9,6 +9,7 @@ function NavBar({ sunImg, moonImg }) {
     const fakeNav = useRef()
     const nav = useRef()
     const topContainer = useRef()
+    const hamburger = useRef()
 
     const toggleMode = () => {
         mode === 'light_mode' ? setMode('dark_mode') : setMode('light_mode')
@@ -19,11 +20,9 @@ function NavBar({ sunImg, moonImg }) {
         document.body.className = mode
     }, [mode])
 
-    const clickHandel = (e) => {
-        const currentElement = e.target;
-        currentElement.classList.toggle("isActive")
+    const handleHamClick = () => {
+        hamburger.current.classList.toggle("isActive")
         nav.current.classList.toggle("isActive")
-        console.log('askjfhasjkf');
         fakeNav.current.classList.toggle("isActive")
         topContainer.current.classList.toggle("isActive")
     }
@@ -45,7 +44,7 @@ function NavBar({ sunImg, moonImg }) {
             </nav>
             <div className="topContainer" ref={topContainer}>
                 <div className="topHeading" ref={fakeNav}>Devarshi</div>
-                <div className="hamburger" onClick={clickHandel}>
+                <div className="hamburger" onClick={handleHamClick} ref={hamburger}>
                     <div></div>
                     <div></div>
                     <div></div>
