@@ -25,13 +25,13 @@ footer {
     opacity: 0.7;
 }
 
-.footerContentCont> :nth-child(2) {
+.footerContentCont > :nth-child(2) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-top: 50px;
 }
 
-.footerContentCont> :nth-child(2) a {
+.footerContentCont > :nth-child(2) a {
     text-decoration: none;
     text-align: center;
     font-size: 25px;
@@ -43,13 +43,13 @@ footer {
     justify-content: space-evenly;
 }
 
-.socials>* {
+.socials > * {
     height: 30px;
     width: 30px;
     fill: white;
 }
 
-.footerContentCont> :last-child {
+.footerContentCont > :last-child {
     position: absolute;
     bottom: 0;
     left: 35%;
@@ -60,7 +60,8 @@ footer {
 
 @media screen and (max-width: 600px) {
     footer {
-        height: 250px;
+        height: 145px;
+        margin-top: 60px;
     }
 
     .footerContentCont {
@@ -72,36 +73,37 @@ footer {
         margin-left: 14px;
     }
 
-    .footerNameInfo>h2 {
+    .footerNameInfo > h2 {
         font-size: 25px;
     }
 
-    .footerNameInfo>p {
+    .footerNameInfo > p {
         font-size: 15px;
     }
 
-    .footerContentCont> :nth-child(2) {
+    .footerContentCont > :nth-child(2) {
         display: flex;
         flex-direction: column;
         padding-top: 0;
     }
 
-    .footerContentCont> :nth-child(2) a {
+    .footerContentCont > :nth-child(2) a {
         font-size: 15px;
     }
 
     .socials {
+        height: unset;
         display: flex;
         flex-direction: column;
     }
 
-    .socials>* {
+    .socials > * {
         margin: 5px 0;
     }
 
-    .footerContentCont> :last-child {
-        bottom: 64px;
-        left: 30%;
+    .footerContentCont > :last-child {
+        bottom: 1px px;
+        left: 25%;
         font-size: 13px;
     }
 }

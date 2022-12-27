@@ -1,6 +1,6 @@
 .projectsContainer {
     height: 70%;
-    width: 90%;
+    width: 100%;
     background-color: var(--bg-clr-primary);
 }
 
@@ -56,7 +56,7 @@
         0 0 20px 0 rgba(81, 81, 81, 0.289);
 }
 
-.slide> :nth-child(1) {
+.slide > :nth-child(1) {
     grid-row-start: 1;
     grid-row-end: 4;
 }
@@ -91,16 +91,16 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-.stackLogos>* {
+.stackLogos > * {
     width: 50px;
     margin: 0 10px;
 }
 
-.stackLogos> :nth-child(2) {
+.stackLogos > :nth-child(2) {
     width: 35px;
 }
 
-.stackLogos> :nth-child(3) {
+.stackLogos > :nth-child(3) {
     width: 50px;
 }
 
@@ -184,11 +184,11 @@
     transform: scaleX(1);
 }
 
-.secondaryBtn a{
+.secondaryBtn a {
     transition: color 500ms;
 }
 
-.secondaryBtn:hover a{
+.secondaryBtn:hover a {
     color: white;
 }
 
@@ -203,44 +203,53 @@
     }
 
     .slide {
-        width: 600px;
-        height: 200px;
-    }
-
-    .slideImgCont {
-        height: 200px;
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        padding: 10px;
+        margin: 10px 0
     }
 
     .slideImgs {
         width: 300px;
+        border-radius: 10px;
     }
 
     .slideTechStackUsed {
-        width: 250px;
-        margin-top: 30px;
+        margin: 15px 0;
+    }
+
+    .slideTechStackUsed h3 {
+        font-size: 20px;
+    }
+
+    .stackLogos > :nth-child(1) {
+        width: 42px;
+    }
+
+    .stackLogos > :nth-child(2) {
+        width: 30px;
+    }
+
+    .stackLogos > :nth-child(3) {
+        width: 40px;
     }
 
     .slideSummary {
         display: none;
     }
 
-    .slideCTA>a {
-        padding: 5px 20px;
-        border-radius: 5px;
-        border-width: 0;
-        font-size: 18px;
-        background-color: var(--clr-accent);
-        color: white;
-        cursor: pointer;
-        transition: transform ease-in 200ms;
-        text-decoration: none;
-    }
-
     .cardsInnerCont {
         padding: 0 13px;
+        margin: 40px 0px;
     }
 
     .cardsInnerCont::-webkit-scrollbar {
         height: 5px;
+    }
+
+    .primaryBtn.primaryBtn.visitBtn,
+    .secondaryBtn {
+        font-size: 20px;
     }
 }

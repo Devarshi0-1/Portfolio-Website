@@ -23,6 +23,10 @@
 @media screen and (max-width: 600px) {
     #projects {
         width: 100%;
+        margin-top: 0px;
+        justify-content: unset;
+        padding-top: 40px;
+        height: unset;
     }
 
     #projects h1 {

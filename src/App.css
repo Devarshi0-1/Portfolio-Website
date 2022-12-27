@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+html, body{
+    overflow-x: hidden !important;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +11,6 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     transition: color, background-color 500ms;
-    outline: 1px solid red;
 }
 
 .light_mode {
@@ -20,7 +23,6 @@
 
 .dark_mode {
     --bg-clr-primary: rgb(32, 32, 32);
-    /* --bg-clr-primary: rgb(14, 10, 46); */
     --clr-accent: rgb(110, 94, 217);
     --clr-accent-light: rgba(111, 94, 219, 0.7);
     --clr-text: black;
@@ -29,7 +31,6 @@
 
 body {
     background-color: var(--bg-clr-primary);
-    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

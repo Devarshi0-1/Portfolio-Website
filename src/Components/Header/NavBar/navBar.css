@@ -1,3 +1,7 @@
+.topHeading {
+    display: none;
+}
+
 nav {
     position: fixed;
     height: 10%;
@@ -5,7 +9,7 @@ nav {
     margin: 0 auto;
     padding: 0 150px;
     background-color: var(--bg-clr-primary);
-    z-index: 10000;
+    z-index: 4;
     box-shadow: 5px 0 20px rgb(111, 111, 111);
 }
 
@@ -16,11 +20,11 @@ nav {
     font-size: 20px;
 }
 
-.navList> :first-child a {
+.navList > :first-child a {
     font-weight: 900;
 }
 
-.navList> :first-child a::after {
+.navList > :first-child a::after {
     display: none;
 }
 
@@ -53,9 +57,10 @@ nav {
     margin-right: auto;
 }
 
-.navList>span {
+.navList > span {
     width: 50px;
     height: 50px;
+    opacity: 0.6;
 }
 
 .nightModeSwitch {
@@ -64,30 +69,123 @@ nav {
     cursor: pointer;
 }
 
+.hamburger {
+    display: none;
+}
+
 /* SMALL DEVICES */
 
 @media screen and (max-width: 600px) {
+
+    .topContainer{
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        z-index:6;
+        transition: background-color 500ms;
+        background-color: var(--bg-clr-primary);
+    }
+
+    .topContainer.isActive{
+        background-color: transparent;
+    }
+
+    .topHeading {
+        position: absolute;
+        display: block;
+        font-size: 25px;
+        color: var(--clr-sec-text);
+        z-index: 5;
+        top: 10px;
+        left: 24px;
+        font-weight: 900;
+        transform: translateX(0%);
+        opacity: 0.6;
+        transition: transform 500ms;
+    }
+
+    .topHeading.isActive {
+        transform: translateX(-130%);
+    }
+
     nav {
-        bottom: 0;
-        padding: 0 100px;
+        position: fixed;
+        top: 2px;
+        right: 0;
+        display: unset;
+        width: 70%;
+        height: 65%;
+        padding: 10px;
+        border-radius: 10px;
+        transform: translateX(100%);
+        transition: transform 500ms;
+    }
+
+    nav.isActive {
+        transform: translateX(-5%);
     }
 
     .navList {
-        font-size: 17px;
-        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        width: unset;
     }
 
     .navList li {
-        margin-inline: 8px;
+        margin: 10px;
     }
 
     .navList li a {
-        font-size: 13px;
+        font-size: 30px;
     }
 
-    .navList>span>img {
-        width: 30px;
-        height: 40px;
-        transform: translateY(-12px);
+    #navName {
+        margin: auto;
+        margin-bottom: 25px;
     }
+
+    .navList > span {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+    }
+
+    .navList > span > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hamburger {
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 40px;
+        top: 12px;
+        right: 24px;
+        z-index: 6;
+        opacity: 0.6;
+    }
+
+    .hamburger > * {
+        height: 4px;
+        width: 100%;
+        margin: 7px auto;
+        border-radius: 3px;
+        background-color: var(--clr-sec-text);
+        transition: all 500ms;
+        pointer-events: none;
+    }
+
+    .hamburger.isActive :first-child {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .hamburger.isActive :nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.isActive :last-child {
+        transform: rotate(-45deg) translate(8px, -8px);
+    }
+
 }

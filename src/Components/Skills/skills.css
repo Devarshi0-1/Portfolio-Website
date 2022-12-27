@@ -84,6 +84,7 @@
     #skills {
         height: 60vh;
         padding-top: 40px;
+        justify-content: unset;
     }
 
     #skills h1 {
