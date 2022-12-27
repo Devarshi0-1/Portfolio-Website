@@ -27,7 +27,6 @@
     height: 440px;
     width: 85%;
     margin: auto auto;
-    /* background-color: grey; */
 }
 
 .aboutImg {
@@ -81,6 +80,12 @@
 /* SMALL DEVICES */
 
 @media screen and (max-width: 600px) {
+
+    #about{
+        padding-top: 40px;
+        height: fit-content;
+    }
+
     #about h1 {
         font-size: 50px;
     }
@@ -88,6 +93,7 @@
     .aboutGridContainer {
         display: flex;
         flex-direction: column;
+        margin: 40px 0;
     }
 
     .aboutImg {

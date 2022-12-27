@@ -7,6 +7,7 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     transition: color, background-color 500ms;
+    outline: 1px solid red;
 }
 
 .light_mode {

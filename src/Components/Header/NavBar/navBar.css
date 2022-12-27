@@ -20,6 +20,10 @@ nav {
     font-weight: 900;
 }
 
+.navList> :first-child a::after {
+    display: none;
+}
+
 .navList li {
     margin-inline: 40px;
 }
