@@ -83,6 +83,7 @@ nav {
         position: fixed;
         z-index:6;
         transition: background-color 500ms;
+        pointer-events: none;
         background-color: var(--bg-clr-primary);
     }
 
@@ -164,6 +165,7 @@ nav {
         right: 24px;
         z-index: 6;
         opacity: 0.6;
+        pointer-events: all;
     }
 
     .hamburger > * {
