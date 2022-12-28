@@ -115,7 +115,7 @@ nav {
         right: 0;
         display: unset;
         width: 70%;
-        height: 65%;
+        height: unset;
         padding: 10px;
         border-radius: 10px;
         transform: translateX(100%);
