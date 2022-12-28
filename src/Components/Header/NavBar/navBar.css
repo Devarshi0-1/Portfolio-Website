@@ -101,12 +101,13 @@ nav {
         left: 24px;
         font-weight: 900;
         transform: translateX(0%);
-        opacity: 0.6;
-        transition: transform 500ms;
+        opacity: 0.8;
+        transition: transform 500ms, opacity 500ms;
     }
 
     .topHeading.isActive {
         transform: translateX(-130%);
+        opacity: 0;
     }
 
     nav {
