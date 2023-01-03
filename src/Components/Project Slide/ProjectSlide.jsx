@@ -1,20 +1,35 @@
 import './projectSlide.css'
-import slide1Img from '../../assets/calcProject.webp'
-import slide2Img from '../../assets/sPsProject.webp'
-import slide3Img from '../../assets/toDoProject.webp'
-import slide4Img from '../../assets/portfolio.webp'
-import htmlIcon from '../../assets/html.svg'
-import cssIcon from '../../assets/css.svg'
-import jsIcon from '../../assets/js.svg'
-import reactIcon from '../../assets/react.svg'
+
+import calcProjectImg from '../../assets/projectImgs/calcProject.webp'
+import sPsProjectImg from '../../assets/projectImgs/sPsProject.webp'
+import toDoProjectImg from '../../assets/projectImgs/toDoProject.webp'
+import portfolioProjectImg from '../../assets/projectImgs/portfolioProject.webp'
+import weatherMemesProjectImg from '../../assets/projectImgs/weather-memesProject.webp'
+import htmlIcon from '../../assets/skillIcons/html.svg'
+import cssIcon from '../../assets/skillIcons/css.svg'
+import jsIcon from '../../assets/skillIcons/js.svg'
+import reactIcon from '../../assets/skillIcons/react.svg'
+
+
 
 export default function ProjectSlide() {
 
     const containerData = [
         {
-            key: slide1Img,
+            key: "slide1Img",
+            projectURL: 'https://devarshi0weather0meme.netlify.app/',
+            projectImgURL: weatherMemesProjectImg,
+            techStackImg1: htmlIcon,
+            techStackImg2: cssIcon,
+            techStackImg3: jsIcon,
+            techStackImg4: reactIcon,
+            summaryText: <>Single Page Application using <strong>React Router</strong>, made with data from <strong>openWeatherMap api</strong> for Weather Info and <strong>reddit api</strong> for memes</>,
+            repoURL: 'https://github.com/Devarshi0-1/Weather-Memes-App'
+        },
+        {
+            key: "slide2Img",
             projectURL: 'https://devarshi0todolist.netlify.app/',
-            projectImgURL: slide3Img,
+            projectImgURL: toDoProjectImg,
             techStackImg1: htmlIcon,
             techStackImg2: cssIcon,
             techStackImg3: jsIcon,
@@ -22,9 +37,9 @@ export default function ProjectSlide() {
             repoURL: 'https://github.com/Devarshi0-1/To-Do'
         },
         {
-            key: slide2Img,
+            key: "slide3Img",
             projectURL: 'https://devarshi0stonepaperscissors.netlify.app/',
-            projectImgURL: slide2Img,
+            projectImgURL: sPsProjectImg,
             techStackImg1: htmlIcon,
             techStackImg2: cssIcon,
             techStackImg3: jsIcon,
@@ -32,9 +47,9 @@ export default function ProjectSlide() {
             repoURL: 'https://github.com/Devarshi0-1/Stone-Paper-Scissors'
         },
         {
-            key: slide3Img,
+            key: "slide4Img",
             projectURL: 'https://react0vite0calculator.netlify.app/',
-            projectImgURL: slide1Img,
+            projectImgURL: calcProjectImg,
             techStackImg1: htmlIcon,
             techStackImg2: cssIcon,
             techStackImg3: jsIcon,
@@ -43,9 +58,9 @@ export default function ProjectSlide() {
             repoURL: 'https://github.com/Devarshi0-1/Calculator-v3'
         },
         {
-            key: slide4Img,
+            key: "slide5Img",
             projectURL: '#home',
-            projectImgURL: slide4Img,
+            projectImgURL: portfolioProjectImg,
             techStackImg1: htmlIcon,
             techStackImg2: cssIcon,
             techStackImg3: jsIcon,
