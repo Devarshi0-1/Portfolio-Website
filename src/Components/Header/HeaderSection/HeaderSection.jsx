@@ -1,6 +1,8 @@
 import './headerSection.css'
 
-function HeaderSection({ profileImg }) {
+import profileImg from '../../../assets/portfolioImgs/navProfileImg.webp'
+
+function HeaderSection() {
     return (
         <section className='headerSection flex-center'>
             <div className="headerGridContainer">
