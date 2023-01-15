@@ -1,14 +1,14 @@
 import './projectSlide.css'
 
-import calcProjectImg from '../../assets/projectImgs/calcProject.webp'
-import sPsProjectImg from '../../assets/projectImgs/sPsProject.webp'
-import toDoProjectImg from '../../assets/projectImgs/toDoProject.webp'
-import portfolioProjectImg from '../../assets/projectImgs/portfolioProject.webp'
-import weatherMemesProjectImg from '../../assets/projectImgs/weather-memesProject.webp'
-import htmlIcon from '../../assets/skillIcons/html.svg'
-import cssIcon from '../../assets/skillIcons/css.svg'
-import jsIcon from '../../assets/skillIcons/js.svg'
-import reactIcon from '../../assets/skillIcons/react.svg'
+import calcProjectImg from '../../../public/assets/projectImgs/calcProject.webp'
+import sPsProjectImg from '../../../public/assets/projectImgs/sPsProject.webp'
+import toDoProjectImg from '../../../public/assets/projectImgs/toDoProject.webp'
+import portfolioProjectImg from '../../../public/assets/projectImgs/portfolioProject.webp'
+import weatherMemesProjectImg from '../../../public/assets/projectImgs/weather-memesProject.webp'
+import htmlIcon from '../../../public/assets/skillIcons/html.svg'
+import cssIcon from '../../../public/assets/skillIcons/css.svg'
+import jsIcon from '../../../public/assets/skillIcons/js.svg'
+import reactIcon from '../../../public/assets/skillIcons/react.svg'
 
 
 

@@ -1,12 +1,12 @@
 import './skills.css'
-import htmlIcon from '../../assets/skillIcons/html.svg'
-import cssIcon from '../../assets/skillIcons/css.svg'
-import jsIcon from '../../assets/skillIcons/js.svg'
-import reactIcon from '../../assets/skillIcons/react.svg'
-import nodeIcon from '../../assets/skillIcons/node.svg'
-import tailwindIcon from '../../assets/skillIcons/tailwind.svg'
-import bootstrapIcon from '../../assets/skillIcons/bootstrap.svg'
-import githubIcon from '../../assets/skillIcons/github.svg'
+import htmlIcon from '../../../public/assets/skillIcons/html.svg'
+import cssIcon from '../../../public/assets/skillIcons/css.svg'
+import jsIcon from '../../../public/assets/skillIcons/js.svg'
+import reactIcon from '../../../public/assets/skillIcons/react.svg'
+import nodeIcon from '../../../public/assets/skillIcons/node.svg'
+import tailwindIcon from '../../../public/assets/skillIcons/tailwind.svg'
+import bootstrapIcon from '../../../public/assets/skillIcons/bootstrap.svg'
+import githubIcon from '../../../public/assets/skillIcons/github.svg'
 
 function Skills() {
 
