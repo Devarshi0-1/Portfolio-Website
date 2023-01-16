@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-html, body{
+html,
+body {
     overflow-x: hidden !important;
+    scroll-behavior: smooth;
+    scroll-padding-top: 35px;
+    font-family: 'Poppins', sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
-    transition: color, background-color 500ms;
+    transition: color, background-color, scale, 500ms;
+}
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
 }
 
 .light_mode {
@@ -121,7 +130,7 @@ body {
     transform: scaleX(1);
 }
 
-.primaryBtn>a {
+.primaryBtn > a {
     text-decoration: none;
     color: white;
 }
