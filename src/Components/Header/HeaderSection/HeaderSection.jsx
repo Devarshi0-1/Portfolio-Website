@@ -1,6 +1,6 @@
 import './headerSection.css'
 
-import profileImg from '../../../../public/assets/portfolioImgs/navProfileImg.webp'
+import profileImg from '../../../assets/portfolioImgs/navProfileImg.webp'
 
 function HeaderSection() {
     return (

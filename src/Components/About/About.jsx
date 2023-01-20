@@ -1,6 +1,6 @@
 import './About.css'
-import aboutImg from '../../../public/assets/portfolioImgs/aboutImg.webp'
-import CV from '../../../public/assets/Devarshi Resume.pdf'
+import aboutImg from '../../assets/portfolioImgs/aboutImg.webp'
+import CV from '../../assets/Devarshi Resume.pdf'
 
 function About() {
     return (
