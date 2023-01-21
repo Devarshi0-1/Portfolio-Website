@@ -1,12 +1,12 @@
-import htmlIcon from '../../assets/skillIcons/html.svg'
-import cssIcon from '../../assets/skillIcons/css.svg'
-import jsIcon from '../../assets/skillIcons/js.svg'
-import reactIcon from '../../assets/skillIcons/react.svg'
+import { AiFillHtml5 } from 'react-icons/ai'
+import { DiCss3 } from 'react-icons/di'
+import { SiJavascript } from 'react-icons/si'
+import { FaReact } from 'react-icons/fa'
 import './projectSlide.css'
 
-function ProjectSlide({ projectURL, targetSelf, projectImgURL, isReact, summaryText, repoURL }) {
+function ProjectSlide({ currentSlide, projectURL, targetSelf, projectImgURL, isReact, summaryText, repoURL }) {
     return (
-        <div className="slide">
+        <div className="slide" style={{ transform: `translateX(-${currentSlide * 102.9}%)` }}>
             <div className='slideImgCont'>
                 <a href={projectURL} target={`${targetSelf ? '_self' : '_blank'}`}>
                     <img className='slideImgs' src={projectImgURL} alt="Project Imgs" loading="lazy" />
@@ -15,10 +15,10 @@ function ProjectSlide({ projectURL, targetSelf, projectImgURL, isReact, summaryT
             <div className='slideTechStackUsed flex-center'>
                 <h3>Tech Stack Used</h3>
                 <div className={`stackLogos ${isReact ? 'withReact' : ''}`}>
-                    <img src={htmlIcon} loading="lazy" />
-                    <img src={cssIcon} loading="lazy" />
-                    <img src={jsIcon} loading="lazy" />
-                    {isReact && <img src={reactIcon} loading="lazy" />}
+                    <AiFillHtml5 />
+                    <DiCss3 />
+                    <SiJavascript />
+                    {isReact && <FaReact />}
                 </div>
             </div>
             <div className='slideSummary flex-center'>

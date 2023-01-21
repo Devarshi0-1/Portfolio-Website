@@ -1,20 +1,17 @@
+import { AiFillHtml5 } from 'react-icons/ai'
+import { DiCss3 } from 'react-icons/di'
+import { SiJavascript, SiTailwindcss } from 'react-icons/si'
+import { FaReact, FaNodeJs, FaBootstrap } from 'react-icons/fa'
+import { BsGithub } from 'react-icons/Bs'
 import './skills.css'
-import htmlIcon from '../../assets/skillIcons/html.svg'
-import cssIcon from '../../assets/skillIcons/css.svg'
-import jsIcon from '../../assets/skillIcons/js.svg'
-import reactIcon from '../../assets/skillIcons/react.svg'
-import nodeIcon from '../../assets/skillIcons/node.svg'
-import tailwindIcon from '../../assets/skillIcons/tailwind.svg'
-import bootstrapIcon from '../../assets/skillIcons/bootstrap.svg'
-import githubIcon from '../../assets/skillIcons/github.svg'
 
 function Skills() {
 
-    const imageSrc = [htmlIcon, cssIcon, jsIcon, reactIcon, nodeIcon, tailwindIcon, bootstrapIcon, githubIcon]
-    const mappedComp = imageSrc.map(src => {
+    const imageSrc = [<AiFillHtml5 className='skillIcons' />, <DiCss3 className='skillIcons' />, <SiJavascript className='skillIcons' />, <FaReact className='skillIcons' />, <FaNodeJs className='skillIcons' />, <SiTailwindcss className='skillIcons' />, <FaBootstrap className='skillIcons' />, <BsGithub className='skillIcons' />]
+    const mappedComp = imageSrc.map((icon, index) => {
         return (
-            <span className='flex-center' key={src}>
-                <img src={src} />
+            <span className='flex-center' key={index}>
+                {icon}
             </span>
         )
     })

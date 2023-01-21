@@ -66,14 +66,46 @@
     animation: blobAnimation 10000ms 7s ease infinite alternate;
 }
 
-.skillsGridContainer img {
-    height: 190px;
+.skillsGridContainer svg {
+    font-size: 190px;
     margin: 0 auto;
     opacity: 1;
     transition: transform 500ms;
 }
 
-.skillsGridContainer img:hover {
+.skillsGridContainer > :nth-child(1) > svg {
+    color: rgb(241, 101, 41);
+}
+
+.skillsGridContainer > :nth-child(2) > svg {
+    color: rgb(40, 98, 233);
+}
+
+.skillsGridContainer > :nth-child(3) > svg {
+    color: rgb(234, 212, 28);
+}
+
+.skillsGridContainer > :nth-child(4) > svg {
+    color: rgb(91, 208, 237);
+}
+
+.skillsGridContainer > :nth-child(5) > svg {
+    color: rgb(87, 147, 81);
+}
+
+.skillsGridContainer > :nth-child(6) > svg {
+    color: rgb(53, 179, 235);
+}
+
+.skillsGridContainer > :nth-child(7) > svg {
+    color: rgb(116, 16, 235);
+}
+
+.skillsGridContainer > :nth-child(8) > svg {
+    color: rgb(35, 39, 45);
+}
+
+.skillsGridContainer svg:hover {
     transform: scale(1.2) rotate(20deg);
 }
 
@@ -102,7 +134,7 @@
         width: 75px;
     }
 
-    .skillsGridContainer img {
-        height: 60px;
+    .skillsGridContainer svg {
+        font-size: 60px;
     }
 }

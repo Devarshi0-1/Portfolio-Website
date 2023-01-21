@@ -22,6 +22,7 @@
     height: 70%;
     width: 100%;
     background-color: var(--bg-clr-primary);
+    flex-direction: column;
 }
 
 .cardsOuterCont {
@@ -30,18 +31,19 @@
 }
 
 .cardsInnerCont {
-    width: 100%;
+    width: 87%;
     height: 100%;
     overflow-x: scroll;
     justify-content: unset;
     gap: 30px;
-    padding: 0 30px;
+    padding: 0 5px;
     scroll-padding: 30px;
     scroll-snap-type: x mandatory;
 }
 
 .cardsInnerCont::-webkit-scrollbar {
     height: 10px;
+    display: none;
 }
 
 .cardsInnerCont::-webkit-scrollbar-track {
@@ -57,6 +59,16 @@
     background-color: rgba(128, 128, 128, 0.309);
 }
 
+.controlButtons {
+    color: var(--clr-sec-text);
+    font-size: 30px;
+}
+
+.controlButtons span {
+    margin: 0 10px;
+    user-select: none;
+    cursor: pointer;
+}
 
 /* SMALL DEVICES */
 @media screen and (max-width: 600px) {
@@ -87,5 +99,10 @@
 
     .cardsInnerCont::-webkit-scrollbar {
         height: 5px;
+        display: block;
+    }
+
+    .controlButtons{
+        display: none;
     }
 }

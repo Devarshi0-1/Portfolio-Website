@@ -44,9 +44,8 @@ footer {
 }
 
 .socials > * {
-    height: 30px;
-    width: 30px;
-    fill: white;
+    font-size: 30px;
+    color: white;
 }
 
 .footerContentCont > :last-child {
@@ -99,6 +98,7 @@ footer {
 
     .socials > * {
         margin: 5px 0;
+        font-size: 20px;
     }
 
     .footerContentCont > :last-child {

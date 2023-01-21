@@ -71,10 +71,12 @@
     opacity: 0.7;
 }
 
-.downloadIco {
-    width: 20px;
-    fill: white;
-    margin-left: 5px;
+.experienceSection .primaryBtn a{
+    gap: 10px;
+}
+
+.experienceSection .primaryBtn svg {
+    font-size: 30px;
 }
 
 /* SMALL DEVICES */

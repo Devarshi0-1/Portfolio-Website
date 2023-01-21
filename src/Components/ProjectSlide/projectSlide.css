@@ -1,17 +1,17 @@
 .slide {
     flex-shrink: 0;
     height: 90%;
-    width: 1000px;
-    background-color: var(--bg-clr-primary);
+    flex-basis: 1000px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
     column-gap: 50px;
     padding: 0 30px;
     border-radius: 15px;
+    background-color: var(--bg-clr-primary);
     box-shadow: 0 0 20px 0 rgba(81, 81, 81, 0.289);
     scroll-snap-align: start;
-    transition: box-shadow 500ms;
+    transition: box-shadow 500ms, transform 500ms;
 }
 
 .slide:hover {
@@ -55,16 +55,25 @@
 }
 
 .stackLogos > * {
-    width: 50px;
+    font-size: 50px;
     margin: 0 10px;
+    color: white;
+}
+
+.stackLogos > :nth-child(1) {
+    color: rgb(241, 101, 41);
 }
 
 .stackLogos > :nth-child(2) {
-    width: 35px;
+    color: rgb(40, 98, 233);
 }
 
 .stackLogos > :nth-child(3) {
-    width: 50px;
+    color: rgb(234, 212, 28);
+}
+
+.stackLogos > :nth-child(4) {
+    color: rgb(91, 208, 237);
 }
 
 .slideSummary {
@@ -82,6 +91,10 @@
 .slideSummary p {
     text-align: justify;
     color: var(--clr-sec-text);
+}
+
+.slideSummary p span {
+    color: var(--clr-accent);
 }
 
 .slideCTA {
@@ -158,44 +171,36 @@
 /* SMALL DEVICES */
 @media screen and (max-width: 600px) {
     .slide {
-            display: flex;
-            flex-direction: column;
-            width: 320px;
-            padding: 10px;
-            margin: 10px 0
-        }
+        display: flex;
+        flex-direction: column;
+        flex-basis: 320px;
+        padding: 10px;
+        margin: 10px 0
+    }
+
+    .slideImgs {
+        width: 300px;
+        border-radius: 10px;
+    }
     
-        .slideImgs {
-            width: 300px;
-            border-radius: 10px;
-        }
-    
-        .slideTechStackUsed {
-            margin: 15px 0;
-        }
-    
-        .slideTechStackUsed h3 {
-            font-size: 20px;
-        }
-    
-        .stackLogos > :nth-child(1) {
-            width: 42px;
-        }
-    
-        .stackLogos > :nth-child(2) {
-            width: 30px;
-        }
-    
-        .stackLogos > :nth-child(3) {
-            width: 40px;
-        }
-    
-        .slideSummary {
-            display: none;
-        }
-    
-        .primaryBtn.primaryBtn.visitBtn,
-        .secondaryBtn {
-            font-size: 20px;
-        }
+    .slideTechStackUsed {
+        margin: 15px 0;
+    }
+
+    .slideTechStackUsed h3 {
+        font-size: 20px;
+    }
+
+    .slideSummary {
+        margin: 10px 10px;
+    }
+
+    .primaryBtn.primaryBtn.visitBtn,
+    .secondaryBtn {
+        font-size: 20px;
+    }
+
+    .slideCTA {
+        margin: 10px 0;
+    }
 }

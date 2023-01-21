@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: color, background-color, scale, 500ms;
+    transition: color 500ms, background-color 500ms, scale 500ms;
 }
 
 input,
