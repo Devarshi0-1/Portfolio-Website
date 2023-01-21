@@ -2,7 +2,7 @@ import { AiFillHtml5 } from 'react-icons/ai'
 import { DiCss3 } from 'react-icons/di'
 import { SiJavascript, SiTailwindcss } from 'react-icons/si'
 import { FaReact, FaNodeJs, FaBootstrap } from 'react-icons/fa'
-import { BsGithub } from 'react-icons/Bs'
+import { BsGithub } from 'react-icons/bs'
 import './skills.css'
 
 function Skills() {

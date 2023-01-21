@@ -1,4 +1,4 @@
-import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/Bs'
+import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs'
 
 import './footer.css'
 

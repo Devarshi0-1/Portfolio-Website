@@ -1,5 +1,5 @@
 import profileImg from '../../../assets/portfolioImgs/astronaut.svg'
-import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/Bs'
+import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs'
 import './headerSection.css'
 
 
