@@ -7,11 +7,20 @@ import './skills.css'
 
 function Skills() {
 
-    const imageSrc = [<AiFillHtml5 className='skillIcons' />, <DiCss3 className='skillIcons' />, <SiJavascript className='skillIcons' />, <FaReact className='skillIcons' />, <FaNodeJs className='skillIcons' />, <SiTailwindcss className='skillIcons' />, <FaBootstrap className='skillIcons' />, <BsGithub className='skillIcons' />]
-    const mappedComp = imageSrc.map((icon, index) => {
+    const imageSrc = [
+        { icon: <AiFillHtml5 className='skillIcons' />, text: "HTML" },
+        { icon: <DiCss3 className='skillIcons' />, text: "CSS" },
+        { icon: <SiJavascript className='skillIcons' />, text: "JavaScript" },
+        { icon: <FaReact className='skillIcons' />, text: "ReactJS" },
+        { icon: <FaNodeJs className='skillIcons' />, text: "NodeJS" },
+        { icon: <SiTailwindcss className='skillIcons' />, text: "TailWind" },
+        { icon: <FaBootstrap className='skillIcons' />, text: "Bootstrap" },
+        { icon: <BsGithub className='skillIcons' />, text: "GitHub" }
+    ]
+    const mappedComp = imageSrc.map(iconComp => {
         return (
-            <span className='flex-center' key={index}>
-                {icon}
+            <span className='flex-center' key={iconComp.text} data-text={iconComp.text}>
+                {iconComp.icon}
             </span>
         )
     })

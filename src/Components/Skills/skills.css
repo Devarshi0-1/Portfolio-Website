@@ -31,6 +31,7 @@
 }
 
 .skillsGridContainer span {
+    position: relative;
     background-color: var(--clr-accent-light);
     border-radius: 343px 274px 278px 257px;
     width: 90%;
@@ -65,6 +66,26 @@
 .skillsGridContainer > :nth-child(8) {
     animation: blobAnimation 10000ms 7s ease infinite alternate;
 }
+
+.skillsGridContainer > span::before {
+    content: attr(data-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    padding: 5px 10px;
+    pointer-events: none;
+    color: white;
+    border-radius: 10px;
+    transition: opacity 500ms;
+    background-color: rgba(115, 115, 115, 0.854);
+}
+
 
 .skillsGridContainer svg {
     font-size: 190px;
@@ -105,8 +126,8 @@
     color: rgb(35, 39, 45);
 }
 
-.skillsGridContainer svg:hover {
-    transform: scale(1.2) rotate(20deg);
+.skillsGridContainer span:hover::before{
+    opacity: 1;
 }
 
 /* SMALL DEVICES */

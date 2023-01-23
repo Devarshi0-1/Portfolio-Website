@@ -60,7 +60,7 @@
 }
 
 .controlButtons {
-    color: var(--clr-sec-text);
+    color: var(--clr-accent);
     font-size: 30px;
 }
 

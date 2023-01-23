@@ -7,7 +7,7 @@ nav {
     height: 10%;
     width: 100vw;
     margin: 0 auto;
-    padding: 0 150px;
+    padding: 0 100px;
     background-color: var(--bg-clr-primary);
     z-index: 4;
     box-shadow: 5px 0 20px rgb(111, 111, 111);
@@ -17,7 +17,7 @@ nav {
     width: 100%;
     justify-content: space-around;
     list-style: none;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .navList > :first-child a {
