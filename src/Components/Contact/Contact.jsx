@@ -22,10 +22,12 @@ function Contact() {
         emailjs.sendForm('service_5jy0pyd', 'template_84825uq', form.current, 'TlCkPF1bWfjNQoRfp')
             .then((result) => {
                 console.log(`Email processed with Status: ${result.text}`);
+                form.current.reset()
             }, (error) => {
                 console.log(error.text);
             });
     };
+
 
     return (
         <section id='contact' className='flex-center'>

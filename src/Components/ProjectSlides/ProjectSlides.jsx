@@ -7,13 +7,16 @@ import './projectSlides.css'
 export default function ProjectSlides() {
     const [screenShotArr, setScreenShotArr] = useState([])
     const [currentSlide, setCurrentSlide] = useState(0)
+    const apiKey1 = "989bcbb4c8f444c8af0c8cd39c1fc2ae"
+    const apiKey2 = "a994791d85b147ffae9b80c779562f5a"
+
 
     const fetchData = () => {
-        const getScreenShot1 = axios.get(`https://api.apiflash.com/v1/urltoimage?access_key=989bcbb4c8f444c8af0c8cd39c1fc2ae&url=https%3A%2F%2Fdevarshi0weather0meme.netlify.app%2F&format=webp&height=973&delay=2&response_type=json`)
-        const getScreenShot2 = axios.get(`https://api.apiflash.com/v1/urltoimage?access_key=989bcbb4c8f444c8af0c8cd39c1fc2ae&url=https%3A%2F%2Fdevarshi0todolist.netlify.app%2F&format=webp&height=973&delay=2&response_type=json`)
-        const getScreenShot3 = axios.get(`https://api.apiflash.com/v1/urltoimage?access_key=989bcbb4c8f444c8af0c8cd39c1fc2ae&url=https%3A%2F%2Fdevarshi0stonepaperscissors.netlify.app%2F&format=webp&height=973&delay=2&response_type=json`)
-        const getScreenShot4 = axios.get(`https://api.apiflash.com/v1/urltoimage?access_key=989bcbb4c8f444c8af0c8cd39c1fc2ae&url=https%3A%2F%2Freact0vite0calculator.netlify.app%2F&format=webp&height=973&delay=2&response_type=json`)
-        const getScreenShot5 = axios.get(`https://api.apiflash.com/v1/urltoimage?access_key=989bcbb4c8f444c8af0c8cd39c1fc2ae&url=https%3A%2F%2Fdevarshi0personalportfolio.netlify.app%2F&format=webp&height=973&delay=2&response_type=json`)
+        const getScreenShot1 = axios.get(`https://api.apiflash.com/v1/urltoimage?access_key=${apiKey2}&url=https%3A%2F%2Fdevarshi0weather0meme.netlify.app%2F&format=webp&height=973&delay=2&response_type=json`)
+        const getScreenShot2 = axios.get(`https://api.apiflash.com/v1/urltoimage?access_key=${apiKey2}&url=https%3A%2F%2Fdevarshi0todolist.netlify.app%2F&format=webp&height=973&delay=2&response_type=json`)
+        const getScreenShot3 = axios.get(`https://api.apiflash.com/v1/urltoimage?access_key=${apiKey2}&url=https%3A%2F%2Fdevarshi0stonepaperscissors.netlify.app%2F&format=webp&height=973&delay=2&response_type=json`)
+        const getScreenShot4 = axios.get(`https://api.apiflash.com/v1/urltoimage?access_key=${apiKey2}&url=https%3A%2F%2Freact0vite0calculator.netlify.app%2F&format=webp&height=973&delay=2&response_type=json`)
+        const getScreenShot5 = axios.get(`https://api.apiflash.com/v1/urltoimage?access_key=${apiKey2}&url=https%3A%2F%2Fdevarshi0personalportfolio.netlify.app%2F&format=webp&height=973&delay=2&response_type=json`)
 
         axios.all([getScreenShot1, getScreenShot2, getScreenShot3, getScreenShot4, getScreenShot5])
             .then(axios.spread((...allData) => {

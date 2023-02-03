@@ -9,7 +9,7 @@ function ProjectSlide({ currentSlide, projectURL, targetSelf, projectImgURL, isR
         <div className="slide" style={{ transform: `translateX(-${currentSlide * 102.9}%)` }}>
             <div className='slideImgCont'>
                 <a href={projectURL} target={`${targetSelf ? '_self' : '_blank'}`}>
-                    <img className='slideImgs' src={projectImgURL} alt="Project Imgs" loading="lazy" />
+                    <img className='slideImgs' src={projectImgURL} alt="Loading..." loading="lazy" />
                 </a>
             </div>
             <div className='slideTechStackUsed flex-center'>
