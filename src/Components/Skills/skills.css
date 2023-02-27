@@ -86,7 +86,6 @@
     background-color: rgba(115, 115, 115, 0.854);
 }
 
-
 .skillsGridContainer svg {
     font-size: 190px;
     margin: 0 auto;
@@ -126,13 +125,12 @@
     color: rgb(35, 39, 45);
 }
 
-.skillsGridContainer span:hover::before{
+.skillsGridContainer span:hover::before {
     opacity: 1;
 }
 
 /* SMALL DEVICES */
 @media screen and (max-width: 600px) {
-
     #skills {
         height: 60vh;
         padding-top: 40px;

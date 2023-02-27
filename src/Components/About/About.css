@@ -37,7 +37,7 @@
     margin: auto 0;
 }
 
-.aboutGridContainer>p {
+.aboutGridContainer > p {
     font-size: 23px;
     opacity: 0.7;
     padding-top: 20px;
@@ -71,7 +71,7 @@
     opacity: 0.7;
 }
 
-.experienceSection .primaryBtn a{
+.experienceSection .primaryBtn a {
     gap: 10px;
 }
 
@@ -82,8 +82,7 @@
 /* SMALL DEVICES */
 
 @media screen and (max-width: 600px) {
-
-    #about{
+    #about {
         padding-top: 40px;
         height: fit-content;
     }
@@ -102,7 +101,7 @@
         width: 240px;
     }
 
-    .aboutGridContainer>p {
+    .aboutGridContainer > p {
         font-size: 15px;
         text-align: center;
     }

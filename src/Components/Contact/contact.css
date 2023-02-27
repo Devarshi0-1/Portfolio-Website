@@ -29,7 +29,6 @@
     border-radius: 10px;
 }
 
-
 .formCont {
     width: 90%;
     margin: 20px;
@@ -89,7 +88,6 @@
     outline: 1px solid var(--clr-accent);
 }
 
-
 .formCont form > button {
     color: white;
 }
@@ -120,7 +118,6 @@
     grid-template-rows: repeat(3, 1fr);
 }
 
-
 .contactGrid > div {
     background-color: rgba(255, 255, 255, 0.273);
     border-radius: 50%;
@@ -148,7 +145,6 @@
 
 /* SMALL DEVICES */
 @media screen and (max-width: 600px) {
-
     #contact {
         height: unset;
         width: 100%;
@@ -199,7 +195,7 @@
     }
 
     .contactOuterCont {
-        display: none
+        display: none;
     }
 
     .formCont form > button {

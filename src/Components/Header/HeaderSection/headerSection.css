@@ -44,7 +44,7 @@
     grid-template-columns: repeat(2, 50%);
 }
 
-.profileImg{
+.profileImg {
     color: red;
 }
 
@@ -140,7 +140,7 @@
 
 /* SMALL DEVICES */
 @media screen and (max-width: 600px) {
-@keyframes profileImgAni {
+    @keyframes profileImgAni {
         0% {
             transform: translateY(-40px);
         }

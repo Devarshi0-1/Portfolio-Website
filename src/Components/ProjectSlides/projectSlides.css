@@ -8,13 +8,13 @@
 
 #projects h1 {
     font-size: 65px;
-    opacity: .8;
+    opacity: 0.8;
     color: var(--clr-sec-text);
 }
 
 #projects h2 {
     font-size: 20px;
-    opacity: .5;
+    opacity: 0.5;
     color: var(--clr-sec-text);
 }
 
@@ -102,7 +102,7 @@
         display: block;
     }
 
-    .controlButtons{
+    .controlButtons {
         display: none;
     }
 }

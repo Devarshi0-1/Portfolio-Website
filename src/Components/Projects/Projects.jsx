@@ -1,5 +1,5 @@
-import './projects.css'
-import ProjectSlides from '../ProjectSlides/ProjectSlides'
+import "./projects.css"
+import ProjectSlides from "../ProjectSlides/ProjectSlides"
 
 function Projects() {
     return (

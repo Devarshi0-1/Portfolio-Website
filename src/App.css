@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 html,
 body {
     overflow-x: hidden !important;
     scroll-behavior: smooth;
     scroll-padding-top: 35px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -21,7 +21,6 @@ button,
 select {
     font-family: inherit;
 }
-
 
 .light_mode {
     --bg-clr-primary: rgb(157, 243, 196);
@@ -100,20 +99,8 @@ body {
     z-index: 3;
 }
 
-.primaryBtn::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
-    background-color: var(--clr-accent);
-    z-index: -1;
-}
-
 .primaryBtn::after {
-    content: '';
+    content: "";
     position: absolute;
     height: 100%;
     width: 100%;
@@ -124,6 +111,18 @@ body {
     transform-origin: left;
     transition: transform 500ms;
     background-color: rgb(78, 66, 156);
+    z-index: -1;
+}
+
+.primaryBtn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: var(--clr-accent);
     z-index: -1;
 }
 
