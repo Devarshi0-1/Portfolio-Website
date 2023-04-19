@@ -1,0 +1,14 @@
+{
+    "semi": true,
+    "tabWidth": 4,
+    "overrides": [
+        {
+            "files": "*.jsx",
+            "options": {
+                "semi": false,
+                "jsxSingleQuote": true,
+                "bracketSameLine": true
+            }
+        }
+    ]
+}
