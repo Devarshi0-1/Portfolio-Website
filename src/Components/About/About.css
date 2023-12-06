@@ -1,11 +1,10 @@
 #about {
-    height: 100vh;
-    width: 80%;
+    min-height: 100vh;
+    width: 70%;
     margin: 0 auto;
-    padding-top: 90px;
     flex-direction: column;
-    position: relative;
-    background-color: var(--bg-clr-primary);
+    gap: 2rem;
+    text-align: center;
 }
 
 #about h1 {
@@ -14,69 +13,13 @@
     color: var(--clr-sec-text);
 }
 
-#about h2 {
-    font-size: 20px;
-    opacity: 0.5;
+#about p{
     color: var(--clr-sec-text);
+    font-size: 1.5rem;
 }
 
-.aboutGridContainer {
-    display: grid;
-    grid-template-rows: 2fr 3fr;
-    grid-template-columns: repeat(2, 50%);
-    height: 440px;
-    width: 85%;
-    margin: auto auto;
-}
-
-.aboutImg {
-    width: 470px;
-    border-radius: 10px;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    margin: auto 0;
-}
-
-.aboutGridContainer > p {
-    font-size: 23px;
-    opacity: 0.7;
-    padding-top: 20px;
-    color: var(--clr-sec-text);
-}
-
-.experienceSection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    font-size: 30px;
-    color: var(--clr-sec-text);
-}
-
-.yearsExp,
-.projects,
-.workExp {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    place-items: center;
-    font-weight: 900;
-    text-align: center;
-}
-
-.yearsExp :nth-child(2),
-.projects :nth-child(2),
-.workExp :nth-child(2) {
-    font-size: 20px;
-    text-align: center;
-    font-weight: 400;
-    opacity: 0.7;
-}
-
-.experienceSection .primaryBtn a {
-    gap: 10px;
-}
-
-.experienceSection .primaryBtn svg {
-    font-size: 30px;
+#about p span{
+    color: #6b6b6b;
 }
 
 /* SMALL DEVICES */

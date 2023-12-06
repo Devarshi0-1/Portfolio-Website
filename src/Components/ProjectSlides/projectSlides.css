@@ -1,9 +1,8 @@
 #projects {
-    height: 100vh;
+    min-height: 100vh;
     width: 85%;
     margin: 150px auto 0;
     flex-direction: column;
-    background-color: var(--bg-clr-primary);
 }
 
 #projects h1 {
@@ -15,59 +14,15 @@
 #projects h2 {
     font-size: 20px;
     opacity: 0.5;
+    margin-bottom: 4rem;
     color: var(--clr-sec-text);
 }
 
 .projectsContainer {
-    height: 70%;
-    width: 100%;
-    background-color: var(--bg-clr-primary);
-    flex-direction: column;
-}
-
-.cardsOuterCont {
-    width: 90%;
-    height: 80%;
-}
-
-.cardsInnerCont {
-    width: 87%;
-    height: 100%;
-    overflow-x: scroll;
-    justify-content: unset;
-    gap: 30px;
-    padding: 0 5px;
-    scroll-padding: 30px;
-    scroll-snap-type: x mandatory;
-}
-
-.cardsInnerCont::-webkit-scrollbar {
-    height: 10px;
-    display: none;
-}
-
-.cardsInnerCont::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-.cardsInnerCont::-webkit-scrollbar-thumb {
-    background-color: rgba(128, 128, 128, 0.509);
-    border-radius: 10px;
-}
-
-.cardsInnerCont::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(128, 128, 128, 0.309);
-}
-
-.controlButtons {
-    color: var(--clr-accent);
-    font-size: 30px;
-}
-
-.controlButtons span {
-    margin: 0 10px;
-    user-select: none;
-    cursor: pointer;
+    min-height: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
 }
 
 /* SMALL DEVICES */
@@ -86,23 +41,5 @@
 
     .projectsContainer {
         height: 60%;
-    }
-
-    .cardsOuterCont {
-        height: 70%;
-    }
-
-    .cardsInnerCont {
-        padding: 0 13px;
-        margin: 40px 0px;
-    }
-
-    .cardsInnerCont::-webkit-scrollbar {
-        height: 5px;
-        display: block;
-    }
-
-    .controlButtons {
-        display: none;
     }
 }

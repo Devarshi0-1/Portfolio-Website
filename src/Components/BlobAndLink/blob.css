@@ -1,0 +1,36 @@
+@keyframes rotation {
+    from {
+        rotate: 0deg;
+    }
+    50% {
+        scale: 1 1.5;
+    }
+    to {
+        rotate: 360deg;
+    }
+}
+
+#backgroundBlob {
+    position: absolute;
+    z-index: -2;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    /* filter: blur(100px); */
+    background-image: linear-gradient(to right, rgba(127, 255, 212), rgba(147, 112, 216));
+    animation: rotation 25s linear infinite;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: transparent;
+    pointer-events: none;
+    user-select: none;
+    touch-action: none;
+    backdrop-filter: blur(100px);
+}

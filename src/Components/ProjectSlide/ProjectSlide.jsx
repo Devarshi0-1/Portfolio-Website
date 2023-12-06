@@ -1,60 +1,40 @@
-import { AiFillHtml5 } from "react-icons/ai"
-import { DiCss3 } from "react-icons/di"
-import { SiJavascript } from "react-icons/si"
-import { FaReact } from "react-icons/fa"
+import { Fragment } from "react"
+import { FiExternalLink } from "react-icons/fi"
+import GithubIco from './../../assets/icons/github.svg?react'
 import "./projectSlide.css"
 
 function ProjectSlide({
-    currentSlide,
+    name,
     projectURL,
     targetSelf,
     projectImgURL,
-    isReact,
-    summaryText,
+    alt_text,
+    icons,
     repoURL,
 }) {
     return (
-        <div
-            className='slide'
-            style={{ transform: `translateX(-${currentSlide * 102.9}%)` }}>
-            <div className='slideImgCont'>
+        <div className='cardWrapper'>
+            <div className='card'>
+                <img src={projectImgURL} alt={alt_text} />
+                <div className='card-info'>
+                    <div className='icons'>
+                        {icons.map((icon, i) => {
+                            const getIcon = () => icon
+                            return <Fragment key={i}>{getIcon()}</Fragment>
+                        })}
+                    </div>
+                </div>
+            </div>
+            <div className='iconsCont'>
+                <a href={repoURL} target='_blank'>
+                    <GithubIco />
+                </a>
+                <p>{name}</p>
                 <a
                     href={projectURL}
                     target={`${targetSelf ? "_self" : "_blank"}`}>
-                    <img
-                        className='slideImgs'
-                        src={projectImgURL}
-                        alt='Loading...'
-                        loading='lazy'
-                    />
+                    <FiExternalLink />
                 </a>
-            </div>
-            <div className='slideTechStackUsed flex-center'>
-                <h3>Tech Stack Used</h3>
-                <div className={`stackLogos ${isReact ? "withReact" : ""}`}>
-                    <AiFillHtml5 />
-                    <DiCss3 />
-                    <SiJavascript />
-                    {isReact && <FaReact />}
-                </div>
-            </div>
-            <div className='slideSummary flex-center'>
-                <h3>Summary</h3>
-                <p>{summaryText}</p>
-            </div>
-            <div className='slideCTA flex-center'>
-                <button className='primaryBtn visitBtn'>
-                    <a
-                        href={projectURL}
-                        target={`${targetSelf ? "_self" : "_blank"}`}>
-                        Visit
-                    </a>
-                </button>
-                <button className='secondaryBtn'>
-                    <a href={repoURL} target='_blank'>
-                        GitHub Repo
-                    </a>
-                </button>
             </div>
         </div>
     )

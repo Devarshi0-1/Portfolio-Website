@@ -1,10 +1,10 @@
 #contact {
-    height: 100vh;
+    min-height: 100vh;
     width: 80%;
     margin: 0 auto;
     margin-top: 150px;
     flex-direction: column;
-    background-color: var(--bg-clr-primary);
+    /* background-color: var(--bg-clr-primary); */
     overflow: hidden;
 }
 
@@ -22,11 +22,19 @@
 }
 
 .contactContainer {
-    width: 90%;
     display: grid;
     grid-template-columns: 4fr 2fr;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.322);
-    border-radius: 10px;
+
+    background-image: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .formCont {
@@ -41,7 +49,7 @@
 }
 
 .formCont form {
-    height: fit-content;
+    min-height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -67,14 +75,14 @@
 
 .formCont form input,
 .formCont form textarea {
-    border: 1px solid var(--clr-sec-text);
-    border-radius: 5px;
+    border: 1px solid rgb(146, 146, 146, 0.3);
+    border-radius: 20px;
     font-size: 20px;
     font-weight: 200;
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
     resize: none;
     color: var(--clr-sec-text);
-    background-color: var(--bg-clr-primary);
+    background-color: transparent;
 }
 
 .formCont form input::placeholder,
@@ -88,18 +96,14 @@
     outline: 1px solid var(--clr-accent);
 }
 
-.formCont form > button {
-    color: white;
-}
-
 .contactOuterCont {
-    background-color: var(--clr-accent);
     border-radius: 0 10px 10px 0;
+    border-left: 1px solid rgb(255, 255, 255, 0.2);
 }
 
 .contactInfoCont {
     width: 90%;
-    height: 80%;
+    min-height: 80%;
     flex-direction: column;
 }
 
@@ -111,7 +115,7 @@
 
 .contactGrid {
     display: grid;
-    height: 60%;
+    min-height: 60%;
     width: 100%;
     margin: 0 auto;
     grid-template-columns: 2fr 8fr;
@@ -119,10 +123,10 @@
 }
 
 .contactGrid > div {
-    background-color: rgba(255, 255, 255, 0.273);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     height: 60px;
-    width: 60px;
+    aspect-ratio: 1;
     margin: auto 0;
 }
 
@@ -138,9 +142,9 @@
     color: white;
 }
 
-.contactIcons {
-    width: 30px;
-    fill: white;
+.contactGrid svg {
+    font-size: 3rem;
+    color: white;
 }
 
 /* SMALL DEVICES */
@@ -200,7 +204,5 @@
 
     .formCont form > button {
         font-size: 15px;
-        height: 40px;
-        width: 130px;
     }
 }

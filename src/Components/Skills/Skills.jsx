@@ -1,37 +1,31 @@
-import { AiFillHtml5 } from "react-icons/ai"
-import { DiCss3 } from "react-icons/di"
-import { SiJavascript, SiTailwindcss } from "react-icons/si"
-import { FaReact, FaNodeJs, FaBootstrap } from "react-icons/fa"
-import { BsGithub } from "react-icons/bs"
+import { stackData, toolsData } from "../../data"
 import "./skills.css"
 
 function Skills() {
-    const imageSrc = [
-        { icon: <AiFillHtml5 className='skillIcons' />, text: "HTML" },
-        { icon: <DiCss3 className='skillIcons' />, text: "CSS" },
-        { icon: <SiJavascript className='skillIcons' />, text: "JavaScript" },
-        { icon: <FaReact className='skillIcons' />, text: "ReactJS" },
-        { icon: <FaNodeJs className='skillIcons' />, text: "NodeJS" },
-        { icon: <SiTailwindcss className='skillIcons' />, text: "TailWind" },
-        { icon: <FaBootstrap className='skillIcons' />, text: "Bootstrap" },
-        { icon: <BsGithub className='skillIcons' />, text: "GitHub" },
-    ]
-    const mappedComp = imageSrc.map((iconComp) => {
-        return (
-            <span
-                className='flex-center'
-                key={iconComp.text}
-                data-text={iconComp.text}>
-                {iconComp.icon}
-            </span>
-        )
-    })
-
     return (
-        <section id='skills' className='flex-center'>
-            <h1>Skills</h1>
-            <h2>My areas of expertise</h2>
-            <div className='skillsGridContainer'>{mappedComp}</div>
+        <section id='skills'>
+            <h1>Stack</h1>
+            <div className='wrapper'>
+                {stackData.map((skill) => (
+                    <div className='skill' key={skill.name}>
+                        <div className='skillImg'>{skill.icon}</div>
+                        <div className='skillName'>{skill.name}</div>
+                        <div className='skillType'>{skill.type}</div>
+                    </div>
+                ))}
+            </div>
+            <div className='toolsWrapper'>
+                <h2>Dev Tools</h2>
+                <div className='wrapper'>
+                    {toolsData.map((skill) => (
+                        <div className='skill' key={skill.name}>
+                            <div className='skillImg'>{skill.icon}</div>
+                            <div className='skillName'>{skill.name}</div>
+                            <div className='skillType'>{skill.type}</div>
+                        </div>
+                    ))}
+                </div>
+            </div>
         </section>
     )
 }

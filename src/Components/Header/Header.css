@@ -1,4 +1,118 @@
 header {
-    height: 100vh;
+    height: 110vh;
     width: 100%;
+}
+
+.headerSection {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.headerGridContainer {
+    width: 85%;
+    color: var(--clr-sec-text);
+    text-align: center;
+}
+
+.headerSection h1 {
+    font-size: 7rem;
+    font-weight: normal;
+
+    opacity: 0.7;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #fff, #000);
+    -webkit-background-clip: text;
+}
+
+.headerSection h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+
+    opacity: 0.7;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #fff, #000);
+    -webkit-background-clip: text;
+}
+
+.headerSection .primaryBtn {
+    margin: 0 auto;
+}
+
+.headerSection .primaryBtn a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.verticalSocials {
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50px;
+    height: 200px;
+    left: -20px;
+}
+
+.socialIcon {
+    color: white;
+    transition: color 500ms;
+}
+
+.socialIcon:hover {
+    color: rgb(186, 186, 186);
+}
+
+/* SMALL DEVICES */
+@media screen and (max-width: 600px) {
+    @keyframes profileImgAni {
+        0% {
+            transform: translateY(-40px);
+        }
+
+        100% {
+            transform: translateY(10px);
+        }
+    }
+
+    .headerSection {
+        padding: 0;
+    }
+
+    .headerGridContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80%;
+        width: 90%;
+    }
+
+    .headerSection h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .headerSection h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .headerSection p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .headerSection button {
+        height: 40px;
+        width: 120px;
+        font-size: 13px;
+        margin-right: 10px;
+        align-self: flex-end;
+    }
+
+    .verticalSocials {
+        left: 95%;
+    }
 }

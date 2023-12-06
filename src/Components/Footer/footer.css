@@ -1,8 +1,8 @@
 footer {
     margin-top: 100px;
-    height: 300px;
+    min-height: 300px;
     width: 100%;
-    background-color: var(--clr-accent);
+    border-top: 1px solid rgba(255, 255, 255, 0.386);
 }
 
 .footerContentCont {
@@ -41,11 +41,6 @@ footer {
 .socials {
     height: 40%;
     justify-content: space-evenly;
-}
-
-.socials > * {
-    font-size: 30px;
-    color: white;
 }
 
 .footerContentCont > :last-child {

@@ -1,159 +1,71 @@
 #skills {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
     padding-top: 90px;
-    flex-direction: column;
-    background-color: var(--bg-clr-primary);
 }
 
 #skills h1 {
-    font-size: 65px;
+    font-weight: 600;
+    font-size: 4rem;
     opacity: 0.8;
     color: var(--clr-sec-text);
 }
 
-#skills h2 {
-    font-size: 20px;
-    opacity: 0.5;
-    color: var(--clr-sec-text);
-}
-
-.skillsGridContainer {
+#skills .wrapper {
     display: grid;
-    width: 85%;
-    height: 70%;
-    row-gap: 40px;
-    margin-top: 100px;
-    place-items: center;
-    position: relative;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(12rem, 100%), 1fr));
+    gap: 2rem;
 }
 
-.skillsGridContainer span {
-    position: relative;
-    background-color: var(--clr-accent-light);
-    border-radius: 343px 274px 278px 257px;
-    width: 90%;
-    aspect-ratio: 1;
-    flex-shrink: 0;
+.skill {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    column-gap: 0.5rem;
+    color: var(--clr-sec-text);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0)
+    );
 }
 
-.skillsGridContainer > :nth-child(2) {
-    animation: blobAnimation 10000ms 1s ease infinite alternate;
+.skill .skillImg {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    font-size: 2.5rem;
 }
 
-.skillsGridContainer > :nth-child(3) {
-    animation: blobAnimation 10000ms 2s ease infinite alternate;
+.skill .skillType {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    font-weight: 200;
 }
 
-.skillsGridContainer > :nth-child(4) {
-    animation: blobAnimation 10000ms 3s ease infinite alternate;
+#skills .toolsWrapper {
+    color: var(--clr-sec-text);
+    margin-top: 3rem;
 }
 
-.skillsGridContainer > :nth-child(5) {
-    animation: blobAnimation 10000ms 4s ease infinite alternate;
-}
-
-.skillsGridContainer > :nth-child(6) {
-    animation: blobAnimation 10000ms 5s ease infinite alternate;
-}
-
-.skillsGridContainer > :nth-child(7) {
-    animation: blobAnimation 10000ms 6s ease infinite alternate;
-}
-
-.skillsGridContainer > :nth-child(8) {
-    animation: blobAnimation 10000ms 7s ease infinite alternate;
-}
-
-.skillsGridContainer > span::before {
-    content: attr(data-text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    opacity: 0;
-    padding: 5px 10px;
-    pointer-events: none;
-    color: white;
-    border-radius: 10px;
-    transition: opacity 500ms;
-    background-color: rgba(115, 115, 115, 0.854);
-}
-
-.skillsGridContainer svg {
-    font-size: 190px;
-    margin: 0 auto;
-    opacity: 1;
-    transition: transform 500ms;
-}
-
-.skillsGridContainer > :nth-child(1) > svg {
-    color: rgb(241, 101, 41);
-}
-
-.skillsGridContainer > :nth-child(2) > svg {
-    color: rgb(40, 98, 233);
-}
-
-.skillsGridContainer > :nth-child(3) > svg {
-    color: rgb(234, 212, 28);
-}
-
-.skillsGridContainer > :nth-child(4) > svg {
-    color: rgb(91, 208, 237);
-}
-
-.skillsGridContainer > :nth-child(5) > svg {
-    color: rgb(87, 147, 81);
-}
-
-.skillsGridContainer > :nth-child(6) > svg {
-    color: rgb(53, 179, 235);
-}
-
-.skillsGridContainer > :nth-child(7) > svg {
-    color: rgb(116, 16, 235);
-}
-
-.skillsGridContainer > :nth-child(8) > svg {
-    color: rgb(35, 39, 45);
-}
-
-.skillsGridContainer span:hover::before {
-    opacity: 1;
+#skills .toolsWrapper h2 {
+    font-size: 2.2rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
 }
 
 /* SMALL DEVICES */
 @media screen and (max-width: 600px) {
     #skills {
-        height: 60vh;
+        min-height: 60vh;
         padding-top: 40px;
         justify-content: unset;
     }
 
     #skills h1 {
         font-size: 50px;
-    }
-
-    .skillsGridContainer {
-        margin: 0;
-        height: 250px;
-        width: 100%;
-        margin: 40px 0;
-    }
-
-    .skillsGridContainer span {
-        height: 75px;
-        width: 75px;
-    }
-
-    .skillsGridContainer svg {
-        font-size: 60px;
     }
 }
