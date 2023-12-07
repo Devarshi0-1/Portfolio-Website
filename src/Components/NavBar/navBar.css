@@ -14,7 +14,6 @@ nav {
     
     transform-style: preserve-3d;
     transform: perspective(0px) rotateX(0deg) rotateY(0deg) translateX(-50%) translateY(50%) translateZ(0px);
-    /* transform: translate(-50%, 50%); */
 }
 
 nav ul {

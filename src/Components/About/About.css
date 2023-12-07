@@ -4,7 +4,6 @@
     margin: 0 auto;
     flex-direction: column;
     gap: 2rem;
-    text-align: center;
 }
 
 #about h1 {
@@ -13,77 +12,31 @@
     color: var(--clr-sec-text);
 }
 
-#about p{
+#about .aboutWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#about .aboutWrapper .aboutMe {
+    text-align: justify;
+}
+
+#about .aboutWrapper p {
     color: var(--clr-sec-text);
     font-size: 1.5rem;
 }
 
-#about p span{
+#about .aboutWrapper p span {
     color: #6b6b6b;
 }
 
-/* SMALL DEVICES */
+#about .aboutWrapper .experience {
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+}
 
 @media screen and (max-width: 600px) {
-    #about {
-        padding-top: 40px;
-        height: fit-content;
-    }
-
-    #about h1 {
-        font-size: 50px;
-    }
-
-    .aboutGridContainer {
-        display: flex;
-        flex-direction: column;
-        margin: 40px 0;
-    }
-
-    .aboutImg {
-        width: 240px;
-    }
-
-    .aboutGridContainer > p {
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .experienceSection {
-        margin-top: 10px;
-    }
-
-    .yearsExp,
-    .projects,
-    .workExp {
-        font-size: 20px;
-    }
-
-    .yearsExp :nth-child(2),
-    .projects :nth-child(2),
-    .workExp :nth-child(2) {
-        font-size: 10px;
-    }
-
-    .cvBtn {
-        margin: auto;
-        height: 35px;
-        width: 150px;
-        font-size: 15px;
-    }
-
-    .experienceSection .primaryBtn {
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 4;
-        height: 40px;
-        width: 120px;
-        font-size: 13px;
-        margin-right: 10px;
-    }
-
-    .downloadIco {
-        width: 15px;
-    }
 }
