@@ -1,6 +1,6 @@
 #projects {
     min-height: 100vh;
-    width: 85%;
+    width: fit-content;
     margin: 150px auto 0;
     flex-direction: column;
 }
@@ -23,6 +23,18 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
+}
+
+#projects .showMore{
+    color: var(--clr-sec-text);
+    margin-left: auto;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: color 500ms;
+}
+
+#projects .showMore:hover{
+    color: rgb(196, 196, 196);
 }
 
 /* SMALL DEVICES */

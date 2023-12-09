@@ -1,11 +1,11 @@
-import { useRef } from "react"
+import { useRef, useEffect } from "react"
 import emailjs from "@emailjs/browser"
+import * as yup from "yup"
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
-import * as yup from "yup"
-import PhoneIco from "./../../assets/icons/phone.svg?react"
-import MailIco from "./../../assets/icons/mail.svg?react"
+import { FiPhone, FiMail } from "react-icons/fi"
 import "./contact.css"
+import { useActiveTabStore } from "../store"
 
 const schema = yup.object().shape({
     name: yup.string("Should Be A String").required("Name is Required"),
@@ -19,6 +19,7 @@ const schema = yup.object().shape({
 
 function Contact() {
     const form = useRef()
+    const contactSec = useRef()
     const {
         register,
         handleSubmit,
@@ -46,8 +47,27 @@ function Contact() {
             )
     }
 
+    const setActiveTab = useActiveTabStore((state) => state.setActiveTab)
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting) {
+                    setActiveTab("contact")
+                }
+            },
+            {
+                threshold: 0.5,
+            }
+        )
+
+        observer.observe(contactSec.current)
+
+        return () => observer.disconnect()
+    }, [])
+
     return (
-        <section id='contact' className='flex-center'>
+        <section id='contact' className='flex-center' ref={contactSec}>
             <h1>Contact</h1>
             <h2>Let's work together</h2>
             <div className='contactContainer'>
@@ -88,11 +108,11 @@ function Contact() {
                         <h2>Get In Touch</h2>
                         <div className='contactGrid'>
                             <div className='phoneIcon flex-center'>
-                                <PhoneIco />
+                                <FiPhone />
                             </div>
                             <p>Phone: +91 6393-9635-99</p>
                             <div className='emailIcon flex-center'>
-                                <MailIco />
+                                <FiMail />
                             </div>
                             <p>Email: devarshidwi@gmail.com</p>
                         </div>

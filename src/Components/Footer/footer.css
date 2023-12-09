@@ -2,6 +2,7 @@ footer {
     margin-top: 100px;
     min-height: 300px;
     width: 100%;
+    overflow: hidden;
     border-top: 1px solid rgba(255, 255, 255, 0.386);
 }
 
@@ -38,9 +39,17 @@ footer {
     color: inherit;
 }
 
-.socials {
-    height: 40%;
+.footerContentCont .socials {
     justify-content: space-evenly;
+    font-size: 1.7rem;
+}
+
+.footerContentCont .socials > * {
+    transition: opacity ease-in-out 500ms;
+}
+
+.footerContentCont .socials > *:hover {
+    opacity: 0.6;
 }
 
 .footerContentCont > :last-child {

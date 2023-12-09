@@ -38,5 +38,9 @@
     text-align: center;
 }
 
+/* SMALL SCREENS */
 @media screen and (max-width: 600px) {
+    #about .aboutWrapper p {
+        font-size: 1rem;
+    }
 }

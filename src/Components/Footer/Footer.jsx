@@ -1,6 +1,4 @@
-import GitHubIco from "./../../assets/icons/github.svg?react"
-import LinkedinIco from "./../../assets/icons/linkedin.svg?react"
-import InstaIco from "./../../assets/icons/instagram.svg?react"
+import { FiGithub, FiLinkedin, FiInstagram } from "react-icons/fi"
 
 import "./footer.css"
 
@@ -19,17 +17,17 @@ function Footer() {
                 </div>
                 <div className='socials flex-center'>
                     <a href='https://github.com/Devarshi0-1' target='_blank'>
-                        <GitHubIco className='socialIcon' />
+                        <FiGithub />
                     </a>
                     <a
                         href='https://www.instagram.com/devarshi__dwivedi/'
                         target='_blank'>
-                        <LinkedinIco className='socialIcon' />
+                        <FiLinkedin />
                     </a>
                     <a
                         href='https://www.linkedin.com/in/devarshi-dwivedi/'
                         target='_blank'>
-                        <InstaIco className='socialIcon' />
+                        <FiInstagram />
                     </a>
                 </div>
                 <p>&copy; Devarshi. All rights reserved</p>

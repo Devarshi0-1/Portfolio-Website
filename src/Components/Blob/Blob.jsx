@@ -17,7 +17,6 @@ const Blob = () => {
                 {
                     duration: 3000,
                     fill: "forwards",
-                    
                 }
             )
         }
@@ -28,7 +27,7 @@ const Blob = () => {
     return (
         <>
             <div id='backgroundBlob'></div>
-            <div className="overlay"></div>
+            <div className='overlay'></div>
         </>
     )
 }

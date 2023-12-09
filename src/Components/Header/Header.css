@@ -10,7 +10,7 @@ header {
     position: relative;
 }
 
-.headerGridContainer {
+.headerContainer {
     width: 85%;
     color: var(--clr-sec-text);
     text-align: center;
@@ -59,6 +59,7 @@ header {
 }
 
 .socialIcon {
+    font-size: 1.5rem;
     color: white;
     transition: color 500ms;
 }
@@ -69,52 +70,18 @@ header {
 
 /* SMALL DEVICES */
 @media screen and (max-width: 600px) {
-    @keyframes profileImgAni {
-        0% {
-            transform: translateY(-40px);
-        }
-
-        100% {
-            transform: translateY(10px);
-        }
-    }
-
-    .headerSection {
-        padding: 0;
-    }
-
-    .headerGridContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 80%;
-        width: 90%;
-    }
-
     .headerSection h1 {
-        font-size: 35px;
-        text-align: center;
+        font-size: 4rem;
+        background-image: none;
+        color: white;
+        -webkit-text-fill-color: white;
     }
 
     .headerSection h2 {
-        text-align: center;
-        font-size: 25px;
-    }
-
-    .headerSection p {
-        font-size: 15px;
-        text-align: center;
-    }
-
-    .headerSection button {
-        height: 40px;
-        width: 120px;
-        font-size: 13px;
-        margin-right: 10px;
-        align-self: flex-end;
+        font-size: 1.5rem;
     }
 
     .verticalSocials {
-        left: 95%;
+        left: -30px;
     }
 }

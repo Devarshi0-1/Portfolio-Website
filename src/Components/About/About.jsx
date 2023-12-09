@@ -1,9 +1,31 @@
+import { useRef, useEffect } from "react"
+import { useActiveTabStore } from '../store'
 import CV from "../../assets/Devarshi_Resume.pdf"
 import "./About.css"
 
 function About() {
+    const setActiveTab = useActiveTabStore((state) => state.setActiveTab)
+    const about = useRef()
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting) {
+                    setActiveTab("about")
+                }
+            },
+            {
+                threshold: 0.5,
+            }
+        )
+
+        observer.observe(about.current)
+
+        return () => observer.disconnect()
+    }, [])
+
     return (
-        <section id='about' className='flex-center'>
+        <section id='about' className='flex-center' ref={about}>
             <h1>About</h1>
             <div className='aboutWrapper'>
                 <div className='aboutMe'>

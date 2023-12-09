@@ -1,6 +1,5 @@
-import { Fragment } from "react"
-import { FiExternalLink } from "react-icons/fi"
-import GithubIco from './../../assets/icons/github.svg?react'
+import { useEffect, useRef, Fragment } from "react"
+import { FiGithub, FiExternalLink } from "react-icons/fi"
 import "./projectSlide.css"
 
 function ProjectSlide({
@@ -12,8 +11,28 @@ function ProjectSlide({
     icons,
     repoURL,
 }) {
+    const cardWrapper = useRef()
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries[0].target.classList.toggle(
+                    "show",
+                    entries[0].isIntersecting
+                )
+
+                if(entries[0].isIntersecting) observer.unobserve(entries[0].target)
+            },
+            { threshold: 0.2 }
+        )
+
+        observer.observe(cardWrapper.current)
+
+        return () => observer.disconnect()
+    }, [])
+
     return (
-        <div className='cardWrapper'>
+        <div className='cardWrapper' ref={cardWrapper}>
             <div className='card'>
                 <img src={projectImgURL} alt={alt_text} />
                 <div className='card-info'>
@@ -27,7 +46,7 @@ function ProjectSlide({
             </div>
             <div className='iconsCont'>
                 <a href={repoURL} target='_blank'>
-                    <GithubIco />
+                    <FiGithub />
                 </a>
                 <p>{name}</p>
                 <a
