@@ -5,19 +5,6 @@
     flex-direction: column;
 }
 
-#projects h1 {
-    font-size: 65px;
-    opacity: 0.8;
-    color: var(--clr-sec-text);
-}
-
-#projects h2 {
-    font-size: 20px;
-    opacity: 0.5;
-    margin-bottom: 4rem;
-    color: var(--clr-sec-text);
-}
-
 .projectsContainer {
     min-height: 70%;
     display: grid;
@@ -42,16 +29,13 @@
     #projects {
         width: 100%;
         margin-top: 0;
-        justify-content: unset;
         padding-top: 40px;
         height: unset;
     }
 
-    #projects h1 {
-        font-size: 50px;
-    }
-
     .projectsContainer {
         height: 60%;
+        gap: 1rem;
+        padding: 0.5rem;
     }
 }

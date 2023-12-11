@@ -1,11 +1,11 @@
 import { useRef, useEffect } from "react"
+import { useActiveTabStore } from "../store"
 import emailjs from "@emailjs/browser"
 import * as yup from "yup"
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import { FiPhone, FiMail } from "react-icons/fi"
 import "./contact.css"
-import { useActiveTabStore } from "../store"
 
 const schema = yup.object().shape({
     name: yup.string("Should Be A String").required("Name is Required"),
@@ -23,7 +23,7 @@ function Contact() {
     const {
         register,
         handleSubmit,
-        formState: { errors },
+        formState: { isLoading, errors },
     } = useForm({
         resolver: yupResolver(schema),
     })
@@ -31,10 +31,10 @@ function Contact() {
     const sendEmail = () => {
         emailjs
             .sendForm(
-                "service_5jy0pyd",
-                "template_84825uq",
+                "service_q8bttqb",
+                "template_qnxfu3m",
                 form.current,
-                "TlCkPF1bWfjNQoRfp"
+                "80OiAn-VHGf8dgbiy"
             )
             .then(
                 (result) => {
@@ -68,8 +68,8 @@ function Contact() {
 
     return (
         <section id='contact' className='flex-center' ref={contactSec}>
-            <h1>Contact</h1>
-            <h2>Let's work together</h2>
+            <h1 className='sectionMainHeading'>Contact</h1>
+            <h2 className='sectionSecondaryHeading'>Let's work together</h2>
             <div className='contactContainer'>
                 <div className='formCont'>
                     <h2>Let's Build Something Great Together</h2>
@@ -100,7 +100,13 @@ function Contact() {
                             placeholder='Message'
                             name='message'></textarea>
                         <p>{errors.message?.message}</p>
-                        <button className='primaryBtn'>Send Message</button>
+                        <button className='primaryBtn'>
+                            {isLoading ? (
+                                <span class='loader'></span>
+                            ) : (
+                                "Send Message"
+                            )}
+                        </button>
                     </form>
                 </div>
                 <div className='contactOuterCont flex-center'>

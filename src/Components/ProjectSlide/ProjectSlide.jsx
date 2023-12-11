@@ -21,7 +21,8 @@ function ProjectSlide({
                     entries[0].isIntersecting
                 )
 
-                if(entries[0].isIntersecting) observer.unobserve(entries[0].target)
+                if (entries[0].isIntersecting)
+                    observer.unobserve(entries[0].target)
             },
             { threshold: 0.2 }
         )

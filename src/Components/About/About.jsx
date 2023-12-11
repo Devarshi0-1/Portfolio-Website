@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react"
-import { useActiveTabStore } from '../store'
+import { useActiveTabStore } from "../store"
 import CV from "../../assets/Devarshi_Resume.pdf"
 import "./About.css"
 
@@ -26,7 +26,7 @@ function About() {
 
     return (
         <section id='about' className='flex-center' ref={about}>
-            <h1>About</h1>
+            <h1 className='sectionMainHeading'>About</h1>
             <div className='aboutWrapper'>
                 <div className='aboutMe'>
                     <p>

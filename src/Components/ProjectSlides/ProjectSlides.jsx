@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react"
 import ProjectSlide from "../ProjectSlide/ProjectSlide"
-import { slidesData } from "../../data"
+import { slidesData } from "../data"
 import { useActiveTabStore } from "../store"
 import "./projectSlides.css"
 
@@ -29,8 +29,8 @@ export default function ProjectSlides() {
 
     return (
         <section id='projects' className='flex-center' ref={projectsSec}>
-            <h1>Projects</h1>
-            <h2>Most Recent Work</h2>
+            <h1 className='sectionMainHeading'>Projects</h1>
+            <h2 className='sectionSecondaryHeading'>Most Recent Work</h2>
             <div className='projectsContainer'>
                 {slidesData.toSpliced(4, slidesData.length).map((slide) => (
                     <ProjectSlide

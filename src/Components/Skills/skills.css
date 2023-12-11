@@ -1,14 +1,7 @@
 #skills {
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
-    padding-top: 90px;
-}
-
-#skills h1 {
-    font-weight: 600;
-    font-size: 4rem;
-    opacity: 0.8;
-    color: var(--clr-sec-text);
+    padding-top: 3rem;
 }
 
 #skills .wrapper {
@@ -68,7 +61,7 @@
 @media screen and (max-width: 600px) {
     #skills {
         margin: auto;
-        width: 80%;
+        width: 90%;
     }
 
     #skills .wrapper {

@@ -1,7 +1,7 @@
-import { useRef,useEffect } from "react"
-import { stackData, toolsData } from "../../data"
+import { useRef, useEffect } from "react"
+import { stackData, toolsData } from "../data"
+import { useActiveTabStore } from "../store"
 import Skill from "./Skill"
-import { useActiveTabStore } from '../store'
 import "./skills.css"
 
 function Skills() {
@@ -27,7 +27,7 @@ function Skills() {
 
     return (
         <section id='skills' ref={skillSec}>
-            <h1>Stack</h1>
+            <h1 className='sectionMainHeading'>Stack</h1>
             <div className='wrapper'>
                 {stackData.map((data) => (
                     <Skill
