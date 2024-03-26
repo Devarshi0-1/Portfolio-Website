@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes rotation {
+    from {
+        border-radius: 20%;
+        transform: rotate(0deg);
+    }
+    50% {
+        border-radius: 50%;
+        scale: 1 1.5;
+    }
+    to {
+        border-radius: 20%;
+        transform: rotate(360deg);
+    }
+}
+
+:root {
+    --bg-clr-primary: rgb(11, 11, 11);
+    --clr-text: black;
+    --clr-sec-text: white;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-clr-primary);
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(128, 128, 128, 0.509);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(128, 128, 128, 0.309);
+}
+
+#backgroundBlob {
+    translate: -50% -50%;
+    will-change: left, top;
+    background-image: linear-gradient(
+        to right,
+        rgba(127, 255, 212),
+        rgba(147, 112, 216)
+    );
+    animation: rotation 4s ease-in-out infinite;
+}
+
+.show {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    50% {
+        scale: 1 1.5;
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#backgroundBlob {
+    position: absolute;
+    z-index: -2;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    will-change: left, top;
+    background-image: linear-gradient(
+        to right,
+        rgba(127, 255, 212),
+        rgba(147, 112, 216)
+    );
+    animation: rotation 5s ease-in-out infinite;
+}
+
+/* SMALL DEVICES */
+@media screen and (max-width: 600px) {
+    #backgroundBlob {
+        display: none;
+    }
+
+}

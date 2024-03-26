@@ -1,7 +1,6 @@
-import { useRef, useEffect } from "react"
-import { useActiveTabStore } from "../store"
-import CV from "../../assets/Devarshi_Resume.pdf"
-import "./About.css"
+import { useEffect, useRef } from "react"
+import CV from "../assets/Devarshi_Resume.pdf"
+import { useActiveTabStore } from "./store"
 
 function About() {
     const setActiveTab = useActiveTabStore((state) => state.setActiveTab)
@@ -16,7 +15,7 @@ function About() {
             },
             {
                 threshold: 0.5,
-            }
+            },
         )
 
         observer.observe(about.current)
@@ -25,11 +24,16 @@ function About() {
     }, [])
 
     return (
-        <section id='about' className='flex-center' ref={about}>
-            <h1 className='sectionMainHeading'>About</h1>
-            <div className='aboutWrapper'>
-                <div className='aboutMe'>
-                    <p>
+        <section
+            id='about'
+            className='mx-auto my-0 flex min-h-screen w-[70%] flex-col items-center justify-center gap-8 sm:min-h-[auto]'
+            ref={about}>
+            <h1 className='sm:text-5xlfont-normal text-6xl text-[var(--clr-sec-text)] opacity-80'>
+                About
+            </h1>
+            <div className='flex flex-col gap-12'>
+                <div className='text-justify'>
+                    <p className='text-2xl text-[var(--clr-sec-text)]'>
                         In <span>2020</span>, I finished my{" "}
                         <span>Schooling</span> and pursued{" "}
                         <span>Computer Science Engineering</span>. I immersed
@@ -43,8 +47,8 @@ function About() {
                         into a <span>Full-stack developer</span>
                     </p>
                 </div>
-                <div className='experience'>
-                    <div className='yearsExp'>
+                <div className='m-auto flex gap-4 text-center'>
+                    <div className='[&>p]:text-2xl [&>p]:text-[var(--clr-sec-text)] sm:[&>p]:text-lg'>
                         <p>02+</p>
                         <p>
                             Years
@@ -52,7 +56,7 @@ function About() {
                             Experience
                         </p>
                     </div>
-                    <div className='projects'>
+                    <div className='[&>p]:text-2xl [&>p]:text-[var(--clr-sec-text)] sm:[&>p]:text-lg'>
                         <p>10+</p>
                         <p>
                             Completed
@@ -60,14 +64,17 @@ function About() {
                             Projects
                         </p>
                     </div>
-                    <div className='workExp'>
+                    <div className='[&>p]:text-2xl [&>p]:text-[var(--clr-sec-text)] sm:[&>p]:text-lg'>
                         <p>2</p>
                         <p>Internships</p>
                     </div>
                 </div>
             </div>
-            <button className='primaryBtn'>
-                <a className='flex-center' href={CV} target='_blank'>
+            <button className='flex h-fit w-fit cursor-pointer items-center rounded-md border-0 bg-white px-4 py-2 text-2xl text-[var(--clr-text)] transition-[background-color] duration-500 hover:bg-slate-300'>
+                <a
+                    className='flex items-center justify-center'
+                    href={CV}
+                    target='_blank'>
                     View Resume
                 </a>
             </button>

@@ -1,5 +1,4 @@
 import { useEffect } from "react"
-import "./blob.css"
 
 const Blob = () => {
     useEffect(() => {
@@ -17,7 +16,7 @@ const Blob = () => {
                 {
                     duration: 3000,
                     fill: "forwards",
-                }
+                },
             )
         }
 
@@ -27,7 +26,7 @@ const Blob = () => {
     return (
         <>
             <div id='backgroundBlob'></div>
-            <div className='overlay'></div>
+            <div className='pointer-events-none absolute inset-0 z-[-1] touch-none select-none bg-transparent backdrop-blur-[100px] sm:hidden'></div>
         </>
     )
 }

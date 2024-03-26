@@ -1,10 +1,9 @@
-import { useRef, useEffect } from "react"
-import { stackData, toolsData } from "../data"
-import { useActiveTabStore } from "../store"
+import { useEffect, useRef } from "react"
 import Skill from "./Skill"
-import "./skills.css"
+import { stackData, toolsData } from "./data"
+import { useActiveTabStore } from "./store"
 
-function Skills() {
+const Skills = () => {
     const setActiveTab = useActiveTabStore((state) => state.setActiveTab)
     const skillSec = useRef()
 
@@ -17,7 +16,7 @@ function Skills() {
             },
             {
                 threshold: 0.5,
-            }
+            },
         )
 
         observer.observe(skillSec.current)
@@ -26,9 +25,14 @@ function Skills() {
     }, [])
 
     return (
-        <section id='skills' ref={skillSec}>
-            <h1 className='sectionMainHeading'>Stack</h1>
-            <div className='wrapper'>
+        <section
+            id='skills'
+            ref={skillSec}
+            className=' mx-auto w-4/5 overflow-hidden pt-12 sm:m-auto sm:w-11/12'>
+            <h1 className='text-6xl font-normal text-[var(--clr-sec-text)] opacity-80 sm:text-5xl'>
+                Stack
+            </h1>
+            <div className='grid grid-cols-[repeat(auto-fit,minmax(min(12rem,100%),1fr))] gap-8 sm:grid sm:w-full sm:grid-cols-2 sm:gap-2'>
                 {stackData.map((data) => (
                     <Skill
                         key={data.name}
@@ -38,9 +42,9 @@ function Skills() {
                     />
                 ))}
             </div>
-            <div className='toolsWrapper'>
-                <h2>Dev Tools</h2>
-                <div className='wrapper'>
+            <div className='mt-12 text-[var(--clr-sec-text)]'>
+                <h2 className='mb-4 text-4xl font-normal'>Dev Tools</h2>
+                <div className='grid grid-cols-[repeat(auto-fit,minmax(min(12rem,100%),1fr))] gap-8'>
                     {toolsData.map((data) => (
                         <Skill
                             key={data.name}
