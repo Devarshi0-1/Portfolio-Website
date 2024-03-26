@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react"
+import { stackData, toolsData } from "./../utils/data"
 import Skill from "./Skill"
-import { stackData, toolsData } from "./data"
 import { useActiveTabStore } from "./store"
 
 const Skills = () => {

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import ProjectSlide from "./ProjectSlide"
-import { slidesData } from "./data"
+import { slidesData } from "../utils/data"
 import { useActiveTabStore } from "./store"
 
 export default function ProjectSlides() {
